@@ -1,5 +1,5 @@
 {
-  "Memory": {
-    "scribble_heap": true
+  "GPU": {
+    "readback_resolve": true
   }
 }
