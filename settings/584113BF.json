@@ -2,10 +2,8 @@
   "GPU": {
     "clear_memory_page_state": true,
     "framerate_limit": 120,
-    "query_occlusion_sample_lower_threshold": 0,
-    "query_occlusion_sample_upper_threshold": 0
-  },
-  "Memory": {
-    "scribble_heap": true
+    "query_occlusion_sample_lower_threshold": 80,
+    "query_occlusion_sample_upper_threshold": 200,
+    "readback_resolve": true
   }
 }
