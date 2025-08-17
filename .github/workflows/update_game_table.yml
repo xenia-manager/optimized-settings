@@ -49,10 +49,11 @@ jobs:
       - name: Commit and Push Changes
         if: steps.check_changes.outputs.changes == 'true'
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "Update game table and counter"
+          git config --global user.name "xeniamanager-ci"
+          git config --global user.email "214508751+xeniamanager-ci@users.noreply.github.com"
+          git add README.md assets/
+          # Avoid failing if no assets change but README did, or vice versa
+          git diff --cached --quiet || git commit -m "chore: Update game table, counter, and assets"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
