@@ -1,0 +1,9 @@
+{
+  "CPU": {
+    "disable_context_promotion": true
+  },
+  "GPU": {
+    "framerate_limit": 120,
+    "readback_resolve": true
+  }
+}
