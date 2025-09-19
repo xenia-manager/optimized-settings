@@ -35,16 +35,17 @@ except Exception as e:
     logger.error("Failed to initialize Git repo: %s", e)
     raise
 
-# ─── Load JSON from Local File ─────────────────────────────────────────────────
-local_json_path = os.path.join(repo_path, "x360db", "games.json")
+# ─── Load JSON from URL ─────────────────────────────────────────────────────────
+json_url = "https://xenia-manager.github.io/x360db/games.json"
 
-logger.info("Loading JSON data from local file: %s", local_json_path)
+logger.info("Loading JSON data from URL: %s", json_url)
 try:
-    with open(local_json_path, "r", encoding="utf-8") as f:
-        games_data = json.load(f)
-    logger.info("Loaded %d game entries from local file", len(games_data))
+    r = requests.get(json_url, timeout=15)
+    r.raise_for_status()
+    games_data = r.json()
+    logger.info("Loaded %d game entries from remote URL", len(games_data))
 except Exception as e:
-    logger.error("Failed to load local JSON file: %s", e)
+    logger.error("Failed to load JSON from URL: %s", e)
     raise
 
 # ─── Build Title Lookup ────────────────────────────────────────────────────────
