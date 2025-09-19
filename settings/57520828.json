@@ -3,6 +3,7 @@
     "launch_module": "SP.xex"
   },
   "GPU": {
-    "framerate_limit": 120
+    "framerate_limit": 120,
+    "readback_resolve": true
   }
 }
