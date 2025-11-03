@@ -7,9 +7,9 @@
     "controller_hotkeys": true
   },
   "GPU": {
-    "framerate_limit": 0,
+    "framerate_limit": 60,
     "readback_resolve": true,
-    "vsync": false
+    "vsync": true
   },
   "Memory": {
     "protect_zero": false

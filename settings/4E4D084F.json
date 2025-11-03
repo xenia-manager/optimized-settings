@@ -1,15 +1,16 @@
 {
   "APU": {
+    "apu_max_queued_frames": 4,
     "use_dedicated_xma_thread": false,
-    "use_new_decoder": true
+    "use_new_decoder": false
   },
   "General": {
     "controller_hotkeys": true
   },
   "GPU": {
-    "framerate_limit": 0,
+    "framerate_limit": 30,
     "readback_resolve": true,
-    "vsync": false
+    "vsync": true
   },
   "Memory": {
     "protect_zero": false
