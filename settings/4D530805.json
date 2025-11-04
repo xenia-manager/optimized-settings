@@ -4,7 +4,7 @@
     "use_new_decoder": true
   },
   "GPU": {
-    "query_occlusion_sample_lower_threshold": -1,
+    "query_occlusion_sample_lower_threshold": 1,
     "readback_resolve": true,
     "render_target_path_d3d12": "rov"
   }
