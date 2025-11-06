@@ -1,17 +1,7 @@
 {
-  "APU": {
-    "use_dedicated_xma_thread": false,
-    "use_new_decoder": true
-  },
-  "General": {
-    "controller_hotkeys": true
-  },
   "GPU": {
-    "framerate_limit": 60,
-    "readback_resolve": true,
+    "framerate_limit": 0,
+    "readback_resolve": fast,
     "vsync": true
-  },
-  "Memory": {
-    "protect_zero": false
   }
 }
