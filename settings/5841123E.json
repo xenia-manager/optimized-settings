@@ -1,4 +1,7 @@
 {
+  "Content": {
+    "license_mask": 1
+  },
   "GPU": {
     "gpu_allow_invalid_fetch_constants": true
   }

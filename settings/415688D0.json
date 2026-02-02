@@ -1,5 +1,6 @@
 {
   "GPU": {
+    "framerate_limit": 60,
     "query_occlusion_sample_lower_threshold": 0,
     "query_occlusion_sample_upper_threshold": 0
   }
