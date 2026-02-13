@@ -3,6 +3,12 @@
     "use_dedicated_xma_thread": false,
     "use_new_decoder": true
   },
+  "GPU": {
+    "framerate_limit": 60
+  },
+  "General": {
+    "launch_module": "SC4_Offline.xex"
+  },
   "Kernel": {
     "protect_zero": false
   }
