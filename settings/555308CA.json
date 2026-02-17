@@ -1,7 +1,10 @@
 {
   "GPU": {
     "clear_memory_page_state": true,
+    "draw_resolution_scale_x": 1,
+    "draw_resolution_scale_y": 1,
     "framerate_limit": 120,
+    "gpu_allow_invalid_upload_range": true,
     "readback_resolve": true
   },
   "Kernel": {

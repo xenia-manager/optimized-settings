@@ -4,7 +4,11 @@
     "use_new_decoder": true
   },
   "GPU": {
-    "framerate_limit": 60
+    "anisotropic_override": -1,
+    "framerate_limit": 60,
+    "gpu": "d3d12",
+    "query_occlusion_sample_lower_threshold": 80,
+    "query_occlusion_sample_upper_threshold": 100
   },
   "General": {
     "launch_module": "SC4_Offline.xex"

@@ -1,0 +1,5 @@
+{
+  "GPU": {
+    "framerate_limit": 60
+  }
+}
