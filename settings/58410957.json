@@ -1,4 +1,7 @@
 {
+  "Content": {
+    "license_mask": 1
+  },
   "Memory": {
     "protect_zero": false
   },

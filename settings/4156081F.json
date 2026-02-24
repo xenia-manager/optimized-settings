@@ -4,6 +4,7 @@
     "disassemble_functions": true
   },
   "GPU": {
+    "framerate_limit": 60,
     "readback_resolve": true
   }
 }

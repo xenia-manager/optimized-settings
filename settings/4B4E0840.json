@@ -1,8 +1,9 @@
 {
-    "APU": {
-        "apu_max_queued_frames": 8
-    },
-    "GPU": {
-        "gpu_allow_invalid_fetch_constants": true
-    }
+  "APU": {
+    "apu_max_queued_frames": 8
+  },
+  "GPU": {
+    "framerate_limit": 60,
+    "gpu_allow_invalid_fetch_constants": true
+  }
 }
