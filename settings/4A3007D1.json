@@ -1,7 +1,0 @@
-{
-  "GPU": {
-    "framerate_limit": 0,
-    "readback_resolve": true,
-    "vsync": false
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "GPU": {
-    "readback_resolve": true
-  },
-  "Memory": {
-    "protect_zero": false
-  }
-}

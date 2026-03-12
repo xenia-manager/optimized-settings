@@ -1,8 +1,0 @@
-{
-  "GPU": {
-    "framerate_limit": 0,
-    "query_occlusion_sample_lower_threshold": 352,
-    "query_occlusion_sample_upper_threshold": 352,
-    "vsync": false
-  }
-}

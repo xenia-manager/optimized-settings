@@ -1,5 +1,0 @@
-{
-  "Kernel": {
-    "cl": "+r_vsync 0 +com_maxfps 0"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "GPU": {
-    "readback_resolve": true,
-    "use_fuzzy_alpha_epsilon": true
-  }
-}

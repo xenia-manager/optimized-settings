@@ -1,8 +1,0 @@
-{
-  "GPU": {
-    "render_target_path_d3d12": "rov"
-  },
-  "Kernel": {
-    "cl": "-nostartupmovies"
-  }
-}

@@ -1,7 +1,0 @@
-{
-    "GPU": {
-        "clear_memory_page_state": true,
-        "draw_resolution_scale_x": 2,
-        "draw_resolution_scale_y": 2
-    }
-}

@@ -1,8 +1,0 @@
-{
-  "GPU": {
-    "clear_memory_page_state": true,
-    "query_occlusion_sample_lower_threshold": 1,
-    "query_occlusion_sample_upper_threshold": 1,
-    "readback_resolve": true
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "CPU": {
-    "break_on_unimplemented_instructions": false
-  },
-  "GPU": {
-    "readback_resolve": true
-  }
-}

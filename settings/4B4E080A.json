@@ -1,9 +1,0 @@
-{
-    "APU": {
-        "use_new_decoder": true,
-        "use_dedicated_xma_thread": false
-    },
-    "GPU": {
-        "query_occlusion_sample_lower_threshold": -1
-    }
-}

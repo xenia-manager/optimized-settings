@@ -1,5 +1,0 @@
-{
-  "Memory": {
-    "ignore_offset_for_ranged_allocations": true
-  }
-}

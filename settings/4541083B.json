@@ -1,9 +1,0 @@
-{
-  "GPU": {
-    "framerate_limit": 0,
-    "vsync": false
-  },
-  "Video": {
-    "internal_display_resolution": 16
-  }
-}

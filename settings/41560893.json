@@ -1,7 +1,0 @@
-{
-  "GPU": {
-    "clear_memory_page_state": true,
-    "gpu_allow_invalid_fetch_constants": true,
-    "readback_resolve": true
-  }
-}
