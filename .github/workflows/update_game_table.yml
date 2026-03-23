@@ -7,7 +7,7 @@ on:
     branches:
       - main
     paths:
-      - 'settings/**'
+      - "settings/**"
 
 jobs:
   update-table:
@@ -33,6 +33,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests gitpython
 
+      - name: Generate settings.json
+        run: |
+          python scripts/generate_settings_json.py
+
       - name: Run update game table script
         run: |
           python scripts/update_game_table.py
@@ -44,16 +48,16 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          git diff --quiet README.md || echo "changes=true" >> $GITHUB_OUTPUT
+          git diff --quiet README.md data/settings.json || echo "changes=true" >> $GITHUB_OUTPUT
 
       - name: Commit and Push Changes
         if: steps.check_changes.outputs.changes == 'true'
         run: |
           git config --global user.name "xeniamanager-ci"
           git config --global user.email "214508751+xeniamanager-ci@users.noreply.github.com"
-          git add README.md assets/
+          git add README.md assets/ data/settings.json
           # Avoid failing if no assets change but README did, or vice versa
-          git diff --cached --quiet || git commit -m "chore: Update game table, counter, and assets"
+          git diff --cached --quiet || git commit -m "chore: Update settings.json, game table, counter, and assets"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
