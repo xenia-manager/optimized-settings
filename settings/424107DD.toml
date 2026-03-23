@@ -1,0 +1,5 @@
+# Title Name: Culdcept SAGA
+# Title ID: 424107DD
+
+[GPU]
+use_fuzzy_alpha_epsilon = true # Fixes the noise in game

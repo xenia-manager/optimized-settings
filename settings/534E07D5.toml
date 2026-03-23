@@ -1,0 +1,5 @@
+# Title Name: Samurai Shodown Sen
+# Title ID: 534E07D5
+
+[GPU]
+use_fuzzy_alpha_epsilon = false # Fixes blocky vegetation

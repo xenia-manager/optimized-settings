@@ -1,0 +1,14 @@
+# Title Name: NHL 11
+# Title ID: 454108FD
+
+[CPU]
+disable_context_promotion = true # Fixes animations
+disassemble_functions = true # Stops the game from crashing
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game
+framerate_limit = 120 # Caps the FPS to 60
+readback_resolve = "full" # Fixes the player uniforms
+
+[Memory]
+protect_zero = false # Stops the game from crashing.

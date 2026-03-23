@@ -1,0 +1,5 @@
+# Title Name: Saw 2 - Flesh & Blood
+# Title ID: 4B4E0822
+
+[GPU]
+framerate_limit = 120 # Caps the framerate to 60

@@ -1,0 +1,5 @@
+# Title Name: Chromehounds
+# Title ID: 534507D4
+
+[GPU]
+readback_resolve = "full" # Fixes the textures at the cost of performance

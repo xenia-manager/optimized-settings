@@ -1,0 +1,8 @@
+# Title Name: Army of Two
+# Title ID: 454107F8
+
+[GPU]
+clear_memory_page_state = true # Fixes the warped graphics in game
+query_occlusion_sample_lower_threshold = -1 # Fixes the lights shining through the walls
+readback_resolve = "fast" # Fixes the bright bloom at the cost of performance
+readback_memexport = false # Improves performance

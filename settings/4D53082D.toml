@@ -1,0 +1,10 @@
+# Title Name: Gears of War 2
+# Title ID: 4D53082D
+
+[GPU]
+framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
+readback_memexport = false # Improves performance
+vsync = false # Unlocks framerate (Combined with framerate limit set to 0)
+
+[Kernel]
+cl = "-NoStartupMovies" # Skips intro

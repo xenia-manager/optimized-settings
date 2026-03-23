@@ -1,0 +1,10 @@
+# Title Name: Skate 3
+# Title ID: 454108E6
+
+[GPU]
+framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
+readback_resolve = "full" # Required for photos to render at the cost of performance
+vsync = false # Unlocks framerate (Combined with framerate limit set to 0)
+
+[General]
+controller_hotkeys = true # Turn off Readback_Resolve with A + Guide Button after a few seconds

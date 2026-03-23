@@ -1,0 +1,10 @@
+# Title Name: Gears of War
+# Title ID: 4D5307D5
+
+[APU]
+apu_max_queued_frames = 8 # Stops audio delay
+
+[GPU]
+framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
+readback_memexport = false # Improves performance
+vsync = false # Unlocks framerate (Combined with framerate limit set to 0)

@@ -1,0 +1,16 @@
+# Title Name: Forza Motorsport 3
+# Title ID: 4D53084D
+
+[APU]
+use_dedicated_xma_thread = false # Fixes audio 
+xma_decoder = "new" # Fixes audio 
+
+[GPU]
+framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
+gpu_allow_invalid_fetch_constants = true # Fixes missing mirrors
+query_occlusion_sample_lower_threshold = -1 # Stops the lights rendering through the walls.
+readback_resolve = "full" # Fixes road texture and thumbnails of cars
+vsync = false # Unlocks framerate (Combined with framerate limit set to 0)
+
+[Storage]
+mount_cache = true # Stops the game from crashing when starting a race

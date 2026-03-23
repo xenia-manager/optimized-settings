@@ -1,0 +1,5 @@
+# Title Name: Shadows of the Damned
+# Title ID: 4B4E0823
+
+[GPU]
+render_target_path_d3d12 = "rov" # Fixes the wireframing on character models

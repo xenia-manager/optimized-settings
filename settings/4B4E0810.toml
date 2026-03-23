@@ -1,0 +1,5 @@
+# Title Name: Ninety-Nine Nights 2
+# Title ID: 4B4E0810
+
+[GPU]
+render_target_path_d3d12 = "rov" # Fixes the dark brightness of the game, but performance could be terrible

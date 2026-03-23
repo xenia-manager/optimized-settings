@@ -1,0 +1,10 @@
+# Title Name: FIFA Street 3
+# Title ID: 4541083B
+
+[GPU]
+framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
+gpu = "vulkan" # Fixes textures on player models
+vsync = false # Unlocks framerate (Combined with framerate limit set to 0)
+
+[Video]
+internal_display_resolution = 16 # Displays the game at 1080p

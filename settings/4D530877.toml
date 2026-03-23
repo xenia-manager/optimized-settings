@@ -1,0 +1,8 @@
+# Title Name: Halo 3 ODST
+# Title ID: 4D530877
+
+[Memory]
+protect_zero = false # Stops the crashing in the menu
+
+[Storage]
+mount_cache = false # Game will be stuck in a black screen if it's set to true

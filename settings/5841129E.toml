@@ -1,0 +1,5 @@
+# Title Name: Sonic The Fighters
+# Title ID: 5841129E
+
+[Video]
+internal_display_resolution = 16 # Renders the game at native 1080p

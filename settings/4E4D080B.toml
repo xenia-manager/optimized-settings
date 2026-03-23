@@ -1,0 +1,5 @@
+# Title Name: Magna Carta 2
+# Title ID: 4E4D080B
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game

@@ -1,0 +1,15 @@
+# Title Name: Dead or Alive 4
+# Title ID: 544307D1
+
+[APU]
+apu_max_queued_frames = 8 # Fixes audio delay
+use_dedicated_xma_thread = false # Fixes music not playing in the background
+xma_decoder = "new" # Fixes music not playing in the background
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics on characters
+framerate_limit = 120 # Mitigates the slow effect while playing Online with a player far away.
+gpu_allow_invalid_fetch_constants = true # Fixes transparency stuff
+
+[Memory]
+protect_zero = false # Stops the game from crashing

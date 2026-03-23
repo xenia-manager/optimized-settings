@@ -1,3 +1,6 @@
+# Title Name: Red Dead Redemption
+# Title ID: 5454082B
+
 [GPU]
 framerate_limit = 120 # Caps the FPS to 60.
 query_occlusion_sample_lower_threshold = -1 # Stops the lights rendering through the walls

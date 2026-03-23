@@ -1,0 +1,6 @@
+# Title Name: Saw
+# Title ID: 4B4E0802
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game
+framerate_limit = 120 # Caps the framerate to 60

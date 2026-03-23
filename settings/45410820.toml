@@ -1,0 +1,6 @@
+# Title Name: NHL 08
+# Title ID: 45410820
+
+[GPU]
+framerate_limit = 120 # Caps the FPS to 60
+readback_resolve = "full" # Fixes the player uniforms

@@ -1,0 +1,6 @@
+# Title Name: Halo - Spartan Assault
+# Title ID: 58411412
+
+[APU]
+use_dedicated_xma_thread = false # Stops the game from softlocking
+xma_decoder = "new" # Stops the game from softlocking

@@ -1,0 +1,6 @@
+# Title Name: UEFA Euro 2008
+# Title ID: 4541083F
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game
+readback_resolve = "fast" # Fixes the stadiums daytime lighting but at the cost of performance

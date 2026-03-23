@@ -1,0 +1,8 @@
+# Title Name: MX vs. ATX Alive
+# Title ID: 5451087B
+
+[GPU]
+framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
+query_occlusion_sample_lower_threshold = -1 # Fixes brightness
+readback_resolve = "full" # Fixes the textures at the cost of performance
+vsync = false # Unlocks framerate (Combined with framerate limit set to 0)

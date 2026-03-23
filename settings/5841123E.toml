@@ -1,0 +1,5 @@
+# Title Name: Far Cry Classic
+# Title ID: 5841123E
+
+[GPU]
+gpu_allow_invalid_fetch_constants = true # Fixes transparency effects

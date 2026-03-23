@@ -1,0 +1,6 @@
+# Title Name: The Orange Box
+# Title ID: 4541080F
+
+[GPU]
+query_occlusion_sample_lower_threshold = -1 # Fixes bleeding lights from the wall
+readback_resolve = "fast" # Fixes broken text at the slight cost of performance

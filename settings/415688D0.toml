@@ -1,0 +1,6 @@
+# Title Name: GoldenEye 007 - Reloaded
+# Title ID: 415688D0
+
+[GPU]
+query_occlusion_sample_lower_threshold = 0 # Stops the lights rendering through the walls
+query_occlusion_sample_upper_threshold = 0 # Stops the lights rendering through the walls

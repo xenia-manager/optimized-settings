@@ -1,0 +1,7 @@
+# Title Name: Project Gotham Racing 4
+# Title ID: 4D5307F9
+
+[GPU]
+framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
+render_target_path_d3d12 = "rov" # Fixes the game from being dark at the cost of performance
+vsync = false # Unlocks framerate (Combined with framerate limit set to 0)

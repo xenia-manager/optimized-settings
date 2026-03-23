@@ -1,0 +1,6 @@
+# Title Name: Panzer General - Allied Assault
+# Title ID: 584109B4
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game
+readback_resolve = "full" # Fixes the textures at the cost of performance

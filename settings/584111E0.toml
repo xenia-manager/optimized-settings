@@ -1,0 +1,5 @@
+# Title Name: Real Steel
+# Title ID: 584111E0
+
+[Memory]
+protect_zero = false # Stops the game from crashing

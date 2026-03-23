@@ -1,0 +1,5 @@
+# Title Name: Dynasty Warriors Gundam 3
+# Title ID: 4E4D0834
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game

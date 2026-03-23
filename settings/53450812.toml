@@ -1,0 +1,9 @@
+# Title Name: Sonic Unleashed
+# Title ID: 53450812
+
+[APU]
+apu_max_queued_frames = 8 # Stops the audio delay
+
+[GPU]
+clear_memory_page_state = true # Fixes the warped graphics in game
+gpu = "vulkan" # Stops the crashing

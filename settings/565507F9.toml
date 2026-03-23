@@ -1,0 +1,5 @@
+# Title Name: The Legend of Spyro - Dawn of the Dragon
+# Title ID: 565507F9
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game.

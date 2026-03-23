@@ -1,0 +1,9 @@
+# Title Name: Lost Odyssey
+# Title ID: 4D5307FA
+
+[APU]
+apu_max_queued_frames = 8 # Stops the audio delay
+
+[GPU]
+readback_memexport = false # Improves performance
+render_target_path_d3d12 = "rov" # Fixes broken character models

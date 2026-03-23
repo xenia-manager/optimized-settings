@@ -1,0 +1,5 @@
+# Title Name: NASCAR 09
+# Title ID: 45410845
+
+[GPU]
+readback_resolve = "full" # Fixes the brightness

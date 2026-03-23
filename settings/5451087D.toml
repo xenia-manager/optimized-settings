@@ -1,0 +1,6 @@
+# Title Name: UFC Undisputed 3
+# Title ID: 5451087D
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game
+readback_resolve = "full" # Fixes CAF textures afaik

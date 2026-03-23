@@ -1,0 +1,5 @@
+# Title Name: Captain America - Super Soldier
+# Title ID: 53450858
+
+[GPU]
+gpu_allow_invalid_fetch_constants = true # Fixes transparency effects

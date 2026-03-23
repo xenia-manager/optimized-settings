@@ -1,0 +1,6 @@
+# Title Name: Kameo
+# Title ID: 4D5307D2
+
+[APU]
+use_dedicated_xma_thread = false # Fixes missing/broken audio
+xma_decoder = "new" # Fixes missing/broken audio

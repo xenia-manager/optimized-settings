@@ -1,0 +1,5 @@
+# Title Name: Frogger - Hyper Arcade Edition
+# Title ID: 584111F9
+
+[CPU]
+break_on_unimplemented_instructions = false # Stops the game from crashing

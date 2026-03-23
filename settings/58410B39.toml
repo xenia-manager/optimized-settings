@@ -1,0 +1,5 @@
+# Title Name: Backbreaker - Vengeance
+# Title ID: 58410B39
+
+[GPU]
+readback_resolve = "fast" # Renders the field and spectators at the cost of performance

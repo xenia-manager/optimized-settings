@@ -1,0 +1,11 @@
+# Title Name: Halo 3
+# Title ID: 4D5307E6
+
+[GPU]
+readback_resolve = "full" # Fixes gamma
+
+[Memory]
+protect_zero = false # Can fix some crashes
+
+[Storage]
+mount_cache = false # Stops the failed boot screen

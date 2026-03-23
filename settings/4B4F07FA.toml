@@ -1,0 +1,11 @@
+# Title Name: Dynasty Warriors Strikeforce
+# Title ID: 4B4F07FA
+
+[CPU]
+break_on_unimplemented_instructions = false # Stops the game from crashing
+
+[GPU]
+render_target_path_d3d12 = "rtv" # Fixes flickering
+
+[Memory]
+protect_zero = false # Stops the game from crashing

@@ -1,0 +1,13 @@
+# Title Name: Tom Clancy's Splinter Cell Double Agent
+# Title ID: 555307D7
+
+[APU]
+use_dedicated_xma_thread = false # Fixes audio related crashes
+xma_decoder = "new" # Fixes audio related crashes
+
+[GPU]
+framerate_limit = 120 # Caps the framerate to 60
+readback_memexport = false # Improves performance
+
+[Memory]
+protect_zero = false # Stops the game from crashing

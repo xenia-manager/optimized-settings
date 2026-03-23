@@ -1,0 +1,12 @@
+# Title Name: Ninja Gaiden 2
+# Title ID: 544307D5
+
+[APU]
+apu_max_queued_frames = 4 # Stops the audio delay
+use_dedicated_xma_thread = false # Fixes missing or broken audio for a bit
+xma_decoder = "new" # Fixes missing or broken audio for a bit
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game
+readback_memexport = false # Improves performance
+readback_resolve = "none" # Improves performance

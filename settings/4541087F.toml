@@ -1,0 +1,6 @@
+# Title Name: Skate 2
+# Title ID: 4541087F
+
+[GPU]
+framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
+vsync = false # Unlocks framerate (Combined with framerate limit set to 0)

@@ -1,0 +1,5 @@
+# Title Name: Soulcalibur 2 HD
+# Title ID: 58411411
+
+[GPU]
+clear_memory_page_state = true # Fixes the warped graphics in game

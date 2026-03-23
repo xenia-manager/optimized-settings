@@ -1,0 +1,5 @@
+# Title Name: Halo Combat Evolved Anniversary
+# Title ID: 4D5309B1
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game

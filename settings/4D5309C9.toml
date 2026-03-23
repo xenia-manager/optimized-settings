@@ -1,3 +1,6 @@
+# Title Name: Forza Horizon
+# Title ID: 4D5309C9
+
 [APU]
 use_dedicated_xma_thread = false # Fixes Audio.
 xma_decoder = "new" # Fixes Audio.

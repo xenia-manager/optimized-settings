@@ -1,0 +1,5 @@
+# Title Name: Trials HD
+# Title ID: 5841095A
+
+[GPU]
+readback_resolve = "full" # Fixes brightness at the cost of performance

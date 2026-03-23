@@ -1,0 +1,5 @@
+# Title Name: Pinball FX
+# Title ID: 58410834
+
+[Video]
+internal_display_resolution = 16 # Renders the game at 1080p

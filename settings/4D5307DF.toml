@@ -1,0 +1,8 @@
+# Title Name: Blue Dragon
+# Title ID: 4D5307DF
+
+[APU]
+apu_max_queued_frames = 8 # Fixes the audio delay
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game

@@ -1,0 +1,5 @@
+# Title Name: Fatal Inertia
+# Title ID: 4B4F07D7
+
+[GPU]
+readback_memexport = false # Improves performance

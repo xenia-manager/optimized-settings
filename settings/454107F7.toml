@@ -1,0 +1,9 @@
+# Title Name: NBA Street Homecourt
+# Title ID: 454107F7
+
+[GPU]
+gpu = "vulkan" # Fixes bright player textures
+render_target_path_vulkan = "fsi" # Fixes HUD being broken, but gives worse performance
+
+[Video]
+internal_display_resolution = 16 # Displays the game at 1080p

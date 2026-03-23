@@ -1,0 +1,9 @@
+# Title Name: Halo Reach
+# Title ID: 4D53085B
+
+[GPU]
+query_occlusion_sample_lower_threshold = -1 # Stops the lights rendering through the walls
+readback_resolve = "full" # Fixes the darker gamma at the cost of performance
+
+[General]
+controller_hotkeys = true # Turn off Readback_Resolve with A + Guide Button after a few seconds

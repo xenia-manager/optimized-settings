@@ -1,0 +1,5 @@
+# Title Name: NBA LIVE 08
+# Title ID: 4541082B
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game

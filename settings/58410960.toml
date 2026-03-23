@@ -1,0 +1,15 @@
+# Title Name: Portal - Still Alive
+# Title ID: 58410960
+
+[CPU]
+break_on_unimplemented_instructions = false # Stops the game from crashing
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game
+query_occlusion_sample_lower_threshold = 0 # Stops the lights rendering through the walls
+query_occlusion_sample_upper_threshold = 0 # Stops the lights rendering through the walls
+readback_resolve = "fast" # Fixes the garbled text
+render_target_path_d3d12 = "rov" # Fixes the lighting
+
+[Kernel]
+cl = "-dvd -game portal +fps_max 0" # Boots the game and unlocks framerate

@@ -1,0 +1,5 @@
+# Title Name: Dynasty Warriors Gundam 2
+# Title ID: 4E4D0800
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game
