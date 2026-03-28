@@ -2,19 +2,42 @@ name: Update Table of optimized games
 description: This workflow updates the table containing all of the games with optimized settings in the README file and updates the game counter
 
 on:
-  workflow_dispatch: # Allows manual trigger
-  push: # Only run when changes to optimized settings are pushed
+  workflow_run:
+    workflows: ["Validate Settings"]
+    types:
+      - completed
     branches:
       - main
-    paths:
-      - "settings/**"
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
+  check-changes:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    outputs:
+      has_settings_changes: ${{ steps.changes.outputs.settings }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
+
+      - name: Check for settings changes
+        id: changes
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "settings=true" >> $GITHUB_OUTPUT
+          else
+            git diff --name-only HEAD~1 HEAD | grep -q "^settings/" && echo "settings=true" >> $GITHUB_OUTPUT || echo "settings=false" >> $GITHUB_OUTPUT
+          fi
+
   update-table:
+    needs: check-changes
+    if: ${{ needs.check-changes.outputs.has_settings_changes == 'true' && (github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -24,9 +47,9 @@ jobs:
           git submodule update --init --recursive
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Install dependencies
         run: |
