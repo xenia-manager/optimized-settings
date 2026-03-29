@@ -1,6 +1,0 @@
-{
-  "Memory": {
-    "protect_zero": false,
-    "scribble_heap": true
-  }
-}

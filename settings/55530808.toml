@@ -1,0 +1,6 @@
+# Title Name: America's Army True Soldiers
+# Title ID: 55530808
+
+[GPU]
+framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
+vsync = false # Unlocks framerate (Combined with framerate limit set to 0)

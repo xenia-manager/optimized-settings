@@ -1,0 +1,6 @@
+# Title Name: El Shaddai Ascension of the Metatron
+# Title ID: 494F07D1
+
+[GPU]
+framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
+vsync = false # Unlocks framerate (Combined with framerate limit set to 0)

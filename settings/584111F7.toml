@@ -1,0 +1,9 @@
+# Title Name: Minecraft Xbox 360 Edition
+# Title ID: 584111F7
+
+[GPU]
+framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
+vsync = false # Unlocks framerate (Combined with framerate limit set to 0)
+
+[Storage]
+mount_cache = true # Shows the world images after Title Update 3

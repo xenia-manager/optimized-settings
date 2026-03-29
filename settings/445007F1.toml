@@ -1,0 +1,5 @@
+# Title Name: Ben 10 - Vilgax Attacks
+# Title ID: 445007F1
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game

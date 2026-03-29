@@ -1,0 +1,5 @@
+# Title Name: Mobile Suit Gundam Operation Troy
+# Title ID: 424107D6
+
+[GPU]
+render_target_path_d3d12 = "rov" # Fixes the decals

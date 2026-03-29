@@ -1,0 +1,11 @@
+# Title Name: Saints Row
+# Title ID: 545107D1
+
+[APU]
+apu_max_queued_frames = 8 # Stops the audio delay
+
+[D3D12]
+d3d12_submit_on_primary_buffer_end = false # Fixes the blocky shadows if you ever get them
+
+[Memory]
+protect_zero = false # Stops the game from crashing

@@ -1,0 +1,5 @@
+# Title Name: Teenage Mutant Ninja Turtles 2013
+# Title ID: 415608FD
+
+[Memory]
+protect_zero = false # Stops the game from crashing

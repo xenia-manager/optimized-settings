@@ -1,9 +1,0 @@
-{
-  "CPU": {
-    "disable_context_promotion": true
-  },
-  "GPU": {
-    "gpu": "vulkan",
-    "render_target_path_vulkan": "fsi"
-  }
-}

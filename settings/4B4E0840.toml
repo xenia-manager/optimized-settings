@@ -1,0 +1,12 @@
+# Title Name: Metal Gear Solid HD Collection
+# Title ID: 4B4E0840
+
+[APU]
+apu_max_queued_frames = 8 # Stops audio delay for MGS2
+
+[GPU]
+gpu_allow_invalid_fetch_constants = true # Fixes transparency effects
+readback_resolve = "full" # Required for photos to render at the cost of performance
+
+[General]
+controller_hotkeys = true # Turn off Readback_Resolve with A + Guide Button after a few seconds

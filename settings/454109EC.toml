@@ -1,0 +1,6 @@
+# Title Name: NHL Legacy Edition
+# Title ID: 454109EC
+
+[GPU]
+framerate_limit = 120 # Caps the FPS to 60
+readback_resolve = "full" # Fixes the player uniforms

@@ -1,0 +1,5 @@
+# Title Name: NBA LIVE 07
+# Title ID: 454107F1
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game

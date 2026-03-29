@@ -1,8 +1,0 @@
-{
-  "CPU": {
-    "disassemble_functions": true
-  },
-  "x64": {
-    "enable_host_guest_stack_synchronization": false
-  }
-}

@@ -1,0 +1,5 @@
+# Title Name: Operation Darkness
+# Title ID: 415407D2
+
+[GPU]
+use_fuzzy_alpha_epsilon = true # Fixes the noise in game

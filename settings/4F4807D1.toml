@@ -1,0 +1,6 @@
+# Title Name: NASCAR 15 Victory Edition
+# Title ID: 4F4807D1
+
+[GPU]
+gpu_allow_invalid_fetch_constants = true # Fixes transparency effects
+readback_resolve = "full" # Fixes the textures at the cost of performance

@@ -1,0 +1,6 @@
+# Title Name: Shadows of the Damned
+# Title ID: 4541092A
+
+[GPU]
+gpu_allow_invalid_fetch_constants = true # Fixes clouds and slow-mo headshots
+readback_memexport = false # Improves performance

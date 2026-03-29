@@ -1,0 +1,6 @@
+# Title Name: Ridge Racer 6
+# Title ID: 4E4D07D3
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game
+use_fuzzy_alpha_epsilon = true # Fixes the noise in game

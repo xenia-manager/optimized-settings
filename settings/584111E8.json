@@ -1,9 +1,0 @@
-{
-  "GPU": {
-    "query_occlusion_sample_lower_threshold": 80,
-    "query_occlusion_sample_upper_threshold": 100
-  },
-  "Memory": {
-    "protect_zero": false
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "General": {
-    "launch_module": "scimitar_final.xex"
-  },
-  "GPU": {
-    "framerate_limit": 120
-  }
-}

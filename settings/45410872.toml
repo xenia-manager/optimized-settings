@@ -1,0 +1,7 @@
+# Title Name: NHL 09
+# Title ID: 45410872
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game
+framerate_limit = 120 # Caps the FPS to 60
+readback_resolve = "full" # Fixes the player uniforms

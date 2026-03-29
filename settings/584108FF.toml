@@ -1,0 +1,10 @@
+# Title Name: Geometry Wars Evolved
+# Title ID: 584108FF
+
+[APU]
+apu_max_queued_frames = 8 # Stop audio delay
+use_dedicated_xma_thread = false # Fixes missing or broken audio
+xma_decoder = "new" # Fixes missing or broken audio
+
+[Video]
+internal_display_resolution = 16 # Renders the game at 1080p

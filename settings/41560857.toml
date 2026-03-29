@@ -1,0 +1,6 @@
+# Title Name: Bakugan - Battle Brawlers
+# Title ID: 41560857
+
+[GPU]
+readback_resolve = "fast" # Fixes the missing character portrait
+use_fuzzy_alpha_epsilon = true # Fixes flickering and characters

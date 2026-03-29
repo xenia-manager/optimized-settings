@@ -1,0 +1,8 @@
+# Title Name: Viva Piñata - Trouble in Paradise
+# Title ID: 4D53085F
+
+[GPU]
+readback_resolve = "full" # Fixes the textures at the cost of performance
+
+[General]
+controller_hotkeys = true # Turn off Readback_Resolve with A + Guide Button once everything loaded properly

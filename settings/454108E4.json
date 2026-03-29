@@ -1,9 +1,0 @@
-{
-  "CPU": {
-    "disable_context_promotion": true
-  },
-  "GPU": {
-    "framerate_limit": 0,
-    "vsync": false
-  }
-}

@@ -1,5 +1,0 @@
-{
-  "x64": {
-    "enable_host_guest_stack_synchronization": true
-  }
-}

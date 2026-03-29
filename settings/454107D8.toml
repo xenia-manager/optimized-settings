@@ -1,0 +1,10 @@
+# Title Name: NBA LIVE 06
+# Title ID: 454107D8
+
+[APU]
+use_dedicated_xma_thread = false # Fixes missing/broken audio but dies after a while
+xma_decoder = "new" # Fixes missing/broken audio but dies after a while
+
+[GPU]
+draw_resolution_scale_x = 2 # Makes artifacts on player clothes less noticeable
+draw_resolution_scale_y = 2 # Makes artifacts on player clothes less noticeable

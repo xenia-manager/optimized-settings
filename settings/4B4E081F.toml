@@ -1,0 +1,5 @@
+# Title Name: NeverDead
+# Title ID: 4B4E081F
+
+[GPU]
+render_target_path_d3d12 = "rov" # Fixes the brightness

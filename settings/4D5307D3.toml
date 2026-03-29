@@ -1,0 +1,9 @@
+# Title Name: Perfect Dark Zero
+# Title ID: 4D5307D3
+
+[APU]
+use_dedicated_xma_thread = false # Fixes missing/broken audio
+xma_decoder = "new" # Fixes missing/broken audio
+
+[GPU]
+framerate_limit = 120 # Caps the FPS to 60

@@ -1,6 +1,0 @@
-{
-  "GPU": {
-    "query_occlusion_sample_lower_threshold": -1,
-    "readback_resolve": true
-  }
-}

@@ -1,0 +1,5 @@
+# Title Name: Bodycount
+# Title ID: 434D0839
+
+[GPU]
+query_occlusion_sample_lower_threshold = 1 # Fixes the broken lens flare

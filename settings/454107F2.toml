@@ -1,0 +1,7 @@
+# Title Name: NCAA March Madness 07
+# Title ID: 454107F2
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game
+framerate_limit = 120 # Caps the FPS to 60
+readback_resolve = "full" # Fixes the textures

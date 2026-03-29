@@ -1,0 +1,13 @@
+# Title Name: Gears of War 3
+# Title ID: 4D5308AB
+
+[GPU]
+framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
+readback_memexport = false # Improves performance
+vsync = false # Unlocks framerate (Combined with framerate limit set to 0)
+
+[Kernel]
+cl = "-NoStartupMovies" # Skips intro
+
+[Memory]
+protect_zero = false # Stops the game from freezing

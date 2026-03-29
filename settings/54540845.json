@@ -1,9 +1,0 @@
-{
-  "GPU": {
-    "clear_memory_page_state": true,
-    "framerate_limit": 120
-  },
-  "Memory": {
-    "protect_zero": false
-  }
-}

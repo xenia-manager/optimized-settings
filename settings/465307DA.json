@@ -1,7 +1,0 @@
-{
-  "GPU": {
-    "framerate_limit": 60,
-    "readback_resolve": true,
-    "vsync": true
-  }
-}

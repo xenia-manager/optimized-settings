@@ -1,0 +1,5 @@
+# Title Name: Jumper
+# Title ID: 425407D1
+
+[Memory]
+scribble_heap = true # Makes the game boot

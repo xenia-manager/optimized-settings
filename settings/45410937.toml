@@ -1,0 +1,5 @@
+# Title Name: Madden NFL 12
+# Title ID: 45410937
+
+[CPU]
+disable_context_promotion = true # Fixes animations

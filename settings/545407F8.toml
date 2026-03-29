@@ -1,0 +1,14 @@
+# Title Name: Midnight Club Los Angeles
+# Title ID: 545407F8
+
+[APU]
+use_dedicated_xma_thread = false # Fixes duplicating audio
+xma_decoder = "new" # Fixes duplicating audio
+
+[GPU]
+gpu_allow_invalid_fetch_constants = true # Fixes transparency effects
+query_occlusion_sample_lower_threshold = -1 # Stops the lights rendering through the walls
+readback_resolve = "fast" # Fixes the broken vinyls at the cost of performance
+
+[General]
+controller_hotkeys = true # Turn off Readback_Resolve with A + Guide Button when the vinyl works

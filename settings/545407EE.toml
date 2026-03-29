@@ -1,0 +1,7 @@
+# Title Name: The Darkness
+# Title ID: 545407EE
+
+[GPU]
+framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
+query_occlusion_sample_lower_threshold = -1 # Stops the lights rendering through the walls
+vsync = false # Unlocks framerate (Combined with framerate limit set to 0)

@@ -1,0 +1,5 @@
+# Title Name: Sonic The Hedgehog
+# Title ID: 534507D6
+
+[APU]
+apu_max_queued_frames = 8 # Stops the audio delay

@@ -1,0 +1,8 @@
+# Title Name: Call of Duty Classic
+# Title ID: 58410957
+
+[Memory]
+protect_zero = false # Required for the game to boot
+
+[Storage]
+mount_cache = true # Required for saving to work

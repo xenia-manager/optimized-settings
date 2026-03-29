@@ -1,0 +1,9 @@
+# Title Name: Civilization Revolution
+# Title ID: 54540845
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game
+framerate_limit = 120 # Caps the framerate to 120
+
+[Memory]
+protect_zero = false # Stops the game from crashing

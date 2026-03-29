@@ -1,5 +1,0 @@
-{
-  "CPU": {
-    "disable_context_promotion": true
-  }
-}

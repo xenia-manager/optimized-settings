@@ -1,6 +1,0 @@
-{
-    "GPU": {
-        "vsync": true,
-        "framerate_limit": 120
-    }
-}

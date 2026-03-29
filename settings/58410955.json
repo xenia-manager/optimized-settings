@@ -1,9 +1,0 @@
-{
-  "GPU": {
-    "query_occlusion_sample_lower_threshold": 0,
-    "query_occlusion_sample_upper_threshold": 0
-  },
-  "Video": {
-    "internal_display_resolution": 16
-  }
-}

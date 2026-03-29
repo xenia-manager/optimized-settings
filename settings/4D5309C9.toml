@@ -1,0 +1,19 @@
+# Title Name: Forza Horizon
+# Title ID: 4D5309C9
+
+[APU]
+use_dedicated_xma_thread = false # Fixes Audio.
+xma_decoder = "new" # Fixes Audio.
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game.
+framerate_limit = 120 # Caps the FPS to 60.
+gpu_allow_invalid_fetch_constants = true # Fixes missing mirrors.
+readback_resolve = "full" # Fixes designs and thumbnails of cars at the cost of performance.
+vsync = false # Unlocks FPS
+
+[General]
+controller_hotkeys = true # Turn off Readback Resolve with A + Guide Button when the car thumbnails work.
+
+[Storage]
+mount_cache = true # Stops the game from crashing when starting a race.

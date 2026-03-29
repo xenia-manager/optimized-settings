@@ -1,0 +1,5 @@
+# Title Name: Backbreaker
+# Title ID: 464F07DA
+
+[GPU]
+readback_resolve = "fast" # Renders the field and spectators at the cost of performance

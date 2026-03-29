@@ -1,0 +1,6 @@
+# Title Name: 50 Cent - Blood on the Sand
+# Title ID: 5451083B
+
+[GPU]
+readback_memexport = false # Improves performance
+render_target_path_d3d12 = "rov"  # Fixes the decals

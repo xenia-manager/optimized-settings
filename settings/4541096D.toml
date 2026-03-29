@@ -1,0 +1,11 @@
+# Title Name: SSX
+# Title ID: 4541096D
+
+[CPU]
+disassemble_functions = true # Stops the game from crashing
+
+[GPU]
+readback_resolve = "full" # Fixes the textures at the cost of performance
+
+[Memory]
+protect_zero = false # Stops the game from crashing

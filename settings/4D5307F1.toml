@@ -1,0 +1,9 @@
+# Title Name: Fable 2
+# Title ID: 4D5307F1
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game
+readback_resolve = "full" # Required for photos to render at the cost of performance
+
+[General]
+controller_hotkeys = true # Turn off Readback_Resolve with A + Guide Button after a few seconds

@@ -1,0 +1,7 @@
+# Title Name: NASCAR The Game - Inside Line
+# Title ID: 415608D2
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics in game
+gpu_allow_invalid_fetch_constants = true # Renders movies and graphics
+readback_resolve = "full" # Renders the car livery

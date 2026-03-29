@@ -1,0 +1,8 @@
+# Title Name: Sonic Free Riders
+# Title ID: 5345084D
+
+[GPU]
+gpu_allow_invalid_fetch_constants = true # Fixes transparency effects
+
+[Memory]
+protect_zero = false # Stops the game from crashing

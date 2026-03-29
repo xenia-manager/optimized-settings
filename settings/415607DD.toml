@@ -1,0 +1,6 @@
+# Title Name: Tony Hawk's Project 8
+# Title ID: 415607DD
+
+[APU]
+use_dedicated_xma_thread = false # Prevents the game from softlocking
+xma_decoder = "new" # Prevents the game from softlocking

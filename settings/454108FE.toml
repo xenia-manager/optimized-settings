@@ -1,0 +1,8 @@
+# Title Name: Madden NFL 11
+# Title ID: 454108FE
+
+[CPU]
+disable_context_promotion = true # Fixes animations
+
+[Storage]
+mount_cache = true # Stops the game from crashing

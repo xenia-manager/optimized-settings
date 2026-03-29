@@ -1,0 +1,15 @@
+# Title Name: Fight Night Champion
+# Title ID: 45410915
+
+[APU]
+apu_max_queued_frames = 8 # Stops the audio delay
+
+[GPU]
+clear_memory_page_state = true # Fixes warped graphics ingame
+framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
+readback_resolve = "full" # Fixes the textures
+vsync = false # Unlocks framerate (Combined with framerate limit set to 0)
+
+[Storage]
+mount_cache = true # Needed for instant replays
+mount_scratch = true # Needed for instant replays
