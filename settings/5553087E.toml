@@ -1,0 +1,5 @@
+# Title Name: Driver: San Francisco
+# Title ID: 5553087E
+
+[GPU]
+framerate_limit = 120                             # 120 FPS cap.

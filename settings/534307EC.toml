@@ -1,0 +1,13 @@
+# Title Name: Tomb Raider: Underworld
+# Title ID: 534307EC
+
+[APU]
+use_dedicated_xma_thread = false                             # Used with the setting below.
+xma_decoder = "new"                             # Stops the audio from looping.
+
+[GPU]
+framerate_limit = 120                             # 60 FPS cap.
+render_target_path_d3d12 = "rov"                         # Fixes the broken textures.
+
+[Memory]
+protect_zero = false                             # Freezing issues.

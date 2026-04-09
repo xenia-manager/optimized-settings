@@ -1,0 +1,6 @@
+# Title Name: Tom Clancy's Ghost Recon: Advanced Warfighter 2
+# Title ID: 555307F0
+
+[GPU]
+framerate_limit = 120                             # 60 FPS cap.
+readback_memexport = "full"                             # Improves performance.

@@ -1,0 +1,9 @@
+# Title Name: Tomb Raider: Anniversary
+# Title ID: 534307EA
+
+[APU]
+use_dedicated_xma_thread = false                             # Used with the setting below.
+xma_decoder = "new"                             # Fixes the softlocking.
+
+[GPU]
+framerate_limit = 120                             # 60 FPS cap.

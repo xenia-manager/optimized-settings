@@ -1,0 +1,6 @@
+# Title Name: Metal Gear Solid V: Ground Zeroes
+# Title ID: 4B4E085C
+
+[GPU]
+framerate_limit = 120                             # 60 FPS cap.
+readback_resolve = "fast"                             # Fixes the gamma.

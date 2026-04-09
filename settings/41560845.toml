@@ -1,0 +1,10 @@
+# Title Name: Blur
+# Title ID: 41560845
+
+[APU]
+use_dedicated_xma_thread = false                             # Used with the setting below.
+xma_decoder = "new"                             # Fixes the missing music but results in buzzing instead.
+
+[GPU]
+framerate_limit = 120                             # 60 FPS cap.
+readback_resolve = "fast"                             # Fixes the bright bloom.
