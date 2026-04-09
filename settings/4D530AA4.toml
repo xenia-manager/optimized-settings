@@ -8,7 +8,7 @@ xma_decoder = "new" # Fixes audio stuff
 [GPU]
 framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
 gpu_allow_invalid_fetch_constants = true # Fixes missing mirrors
-readback_resolve = "full" # Fixes designs and thumbnails of cars at the cost of performance
+readback_resolve = "fast" # Fixes designs and thumbnails of cars at the cost of performance
 vsync = false # Unlocks framerate (Combined with framerate limit set to 0)
 
 [General]
