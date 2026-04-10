@@ -1,0 +1,8 @@
+# Title Name: Saints Row 2
+# Title ID: 545107FC
+
+[GPU]
+query_occlusion_sample_lower_threshold = -1 # Fixes light bleeding
+
+[Memory]
+protect_zero = false # Fixes freezing issues

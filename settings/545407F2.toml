@@ -1,0 +1,8 @@
+# Title Name: Grand Theft Auto IV
+# Title ID: 545407F2
+
+[GPU]
+gpu = "vulkan" # Stops the game from crashing
+
+[Storage]
+mount_cache = true # Adds missing objects on the map

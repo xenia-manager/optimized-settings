@@ -1,0 +1,5 @@
+# Title Name: Dead Space 2
+# Title ID: 454108DF
+
+[GPU]
+framerate_limit = 120 # Caps the framerate to 60

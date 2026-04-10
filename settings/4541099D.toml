@@ -1,0 +1,5 @@
+# Title Name: Dead Space 3
+# Title ID: 4541099D
+
+[GPU]
+framerate_limit = 120 # Caps the framerate to 60
