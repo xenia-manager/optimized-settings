@@ -2,8 +2,8 @@
 # Title ID: 534307EA
 
 [APU]
-use_dedicated_xma_thread = false                             # Used with the setting below.
-xma_decoder = "new"                             # Fixes the softlocking.
+use_dedicated_xma_thread = false # Fixes softlocking (combined with xma_decoder = "new")
+xma_decoder = "new" # Fixes softlocking (combined with use_dedicated_xma_thread = false)
 
 [GPU]
-framerate_limit = 120                             # 60 FPS cap.
+framerate_limit = 120 # Caps the framerate to 60

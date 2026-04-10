@@ -2,9 +2,9 @@
 # Title ID: 454107EC
 
 [APU]
-apu = "sdl"                             # Fixes audio.
-use_dedicated_xma_thread = false                             # Fixes audio.
-xma_decoder = "new"                             # Fixes audio.
+apu = "sdl" # Fixes audio
+use_dedicated_xma_thread = false # Fixes audio
+xma_decoder = "new" # Fixes audio
 
 [GPU]
-framerate_limit = 120                             # 60 FPS cap.
+framerate_limit = 120 # Caps the framerate to 60

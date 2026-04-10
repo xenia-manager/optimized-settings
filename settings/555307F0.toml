@@ -2,5 +2,5 @@
 # Title ID: 555307F0
 
 [GPU]
-framerate_limit = 120                             # 60 FPS cap.
-readback_memexport = "full"                             # Improves performance.
+framerate_limit = 120 # Caps the framerate to 60
+readback_memexport = "full" # Improves performance

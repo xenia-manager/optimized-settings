@@ -2,4 +2,4 @@
 # Title ID: 5553087E
 
 [GPU]
-framerate_limit = 120                             # 120 FPS cap.
+framerate_limit = 120 # Caps the framerate to 60

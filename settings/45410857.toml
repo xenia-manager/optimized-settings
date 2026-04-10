@@ -2,8 +2,8 @@
 # Title ID: 45410857
 
 [APU]
-use_dedicated_xma_thread = false                             # Fixes audio.
-xma_decoder = "new"                             # Fixes audio.
+use_dedicated_xma_thread = false # Fixes audio
+xma_decoder = "new" # Fixes audio
 
 [GPU]
-framerate_limit = 120                             # 60 FPS cap.
+framerate_limit = 120 # Caps the framerate to 60
