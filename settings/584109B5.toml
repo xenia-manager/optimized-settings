@@ -1,9 +1,5 @@
 # Title Name: Snoopy Flying Ace
 # Title ID: 584109B5
 
-[APU]
-use_dedicated_xma_thread = false # Fixes missing/broken audio
-xma_decoder = "new" # Fixes missing/broken audio
-
 [GPU]
 render_target_path_d3d12 = "rov" # Fixes the decals

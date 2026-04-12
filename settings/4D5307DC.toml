@@ -1,10 +1,6 @@
 # Title Name: Crackdown
 # Title ID: 4D5307DC
 
-[APU]
-use_dedicated_xma_thread = false # Fixes missing/broken audio
-xma_decoder = "new" # Fixes missing/broken audio
-
 [GPU]
 readback_resolve = "full" # Fixes the bright bloom at the cost of performance
 

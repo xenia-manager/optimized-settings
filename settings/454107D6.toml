@@ -1,9 +1,5 @@
 # Title Name: Tiger Woods PGA Tour 06
 # Title ID: 454107D6
 
-[APU]
-use_dedicated_xma_thread = false # Fixes missing/broken audio
-xma_decoder = "new" # Fixes missing/broken audio
-
 [GPU]
 readback_resolve = "full" # Fixes the clothes at the cost of performance

@@ -1,6 +1,0 @@
-# Title Name: Crackdown 2
-# Title ID: 4D5308BC
-
-[APU]
-use_dedicated_xma_thread = false # Fixes missing/broken audio
-xma_decoder = "new" # Fixes missing/broken audio

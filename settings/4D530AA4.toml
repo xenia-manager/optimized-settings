@@ -1,14 +1,10 @@
 # Title Name: Forza Horizon 2
 # Title ID: 4D530AA4
 
-[APU]
-use_dedicated_xma_thread = false # Fixes audio stuff
-xma_decoder = "new" # Fixes audio stuff
-
 [GPU]
 framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
 gpu_allow_invalid_fetch_constants = true # Fixes missing mirrors
-readback_resolve = "fast" # Fixes designs and thumbnails of cars at the cost of performance
+readback_resolve = "full" # Fixes designs and thumbnails of cars at the cost of performance (Use it with controller_hotkeys to disable it after purchasing a car to have proper thumbnails to improve performance)
 vsync = false # Unlocks framerate (Combined with framerate limit set to 0)
 
 [General]

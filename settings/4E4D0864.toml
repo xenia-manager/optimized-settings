@@ -1,10 +1,6 @@
 # Title Name: Armored Core - Verdict Day
 # Title ID: 4E4D0864
 
-[APU]
-use_dedicated_xma_thread = false # Stops the game from crashing
-xma_decoder = "new" # Stops the game from crashing
-
 [GPU]
 framerate_limit = 0 # Unlocks framerate
 readback_resolve = "full" # Fixes the textures at the cost of performance

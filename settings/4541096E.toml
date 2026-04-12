@@ -1,10 +1,6 @@
 # Title Name: FUSE
 # Title ID: 4541096E
 
-[APU]
-use_dedicated_xma_thread = false # Prevents delay between dialogue
-xma_decoder = "new" # Prevents delay between dialogue
-
 [GPU]
 query_occlusion_sample_lower_threshold = 0 # Fixes lens flares
 query_occlusion_sample_upper_threshold = 0 # Fixes lens flares

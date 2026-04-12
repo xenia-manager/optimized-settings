@@ -1,10 +1,6 @@
 # Title Name: Crash of the Titans
 # Title ID: 565507E4
 
-[APU]
-use_dedicated_xma_thread = false # Fixes infinite loading but broken dialogue audio remains
-xma_decoder = "new" # Fixes infinite loading but broken dialogue audio remains
-
 [GPU]
 clear_memory_page_state = true # Fixes the warped graphics in game
 framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
