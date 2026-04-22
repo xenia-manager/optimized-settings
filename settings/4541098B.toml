@@ -1,8 +1,5 @@
 # Title Name: Madden NFL 13
 # Title ID: 4541098B
 
-[CPU]
-disable_context_promotion = true # Fixes animations
-
 [Storage]
 mount_cache = true # Stops the game from crashing

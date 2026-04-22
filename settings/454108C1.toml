@@ -1,5 +1,0 @@
-# Title Name: NBA LIVE 10
-# Title ID: 454108C1
-
-[CPU]
-disable_context_promotion = true # Fixes animations

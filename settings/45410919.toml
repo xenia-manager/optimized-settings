@@ -1,8 +1,5 @@
 # Title Name: NBA ELITE 11
 # Title ID: 45410919
 
-[CPU]
-disable_context_promotion = true # Fixes animations
-
 [Storage]
 mount_cache = false # Passes black screen in startup

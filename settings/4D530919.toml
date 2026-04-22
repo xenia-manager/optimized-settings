@@ -1,9 +1,6 @@
 # Title Name: Halo 4
 # Title ID: 4D530919
 
-[CPU]
-disable_context_promotion = true # Fixes upside down models bug
-
 [GPU]
 query_occlusion_sample_lower_threshold = -1 # Stops the lights rendering through the walls
 readback_resolve = "full" # Fixes the darker gamma at the cost of performance

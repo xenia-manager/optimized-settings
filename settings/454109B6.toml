@@ -1,8 +1,5 @@
 # Title Name: NCAA Football 14
 # Title ID: 454109B6
 
-[CPU]
-disable_context_promotion = true # Fixes animations
-
 [GPU]
 readback_resolve = "full" # Fixes the textures
