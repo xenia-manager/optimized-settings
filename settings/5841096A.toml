@@ -1,0 +1,5 @@
+# Title Name: Hydro Thunder Hurricane
+# Title ID: 5841096A
+
+[GPU]
+readback_resolve = "full" # Fixes brightness at the cost of performance
