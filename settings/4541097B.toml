@@ -1,9 +1,6 @@
 # Title Name: Fifa Street
 # Title ID: 4541097B
 
-[CPU]
-disable_context_promotion = true # Fixes animations
-
 [GPU]
 framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
 readback_resolve = "full" # Fixes the textures at the cost of performance

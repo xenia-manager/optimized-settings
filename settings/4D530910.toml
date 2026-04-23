@@ -1,10 +1,6 @@
 # Title Name: Forza Motorsport 4
 # Title ID: 4D530910
 
-[APU]
-use_dedicated_xma_thread = false # Fixes audio 
-xma_decoder = "new" # Fixes audio 
-
 [GPU]
 framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
 gpu_allow_invalid_fetch_constants = true # Fixes missing mirrors

@@ -1,9 +1,5 @@
 # Title Name: Call of Duty 3
 # Title ID: 415607E1
 
-[APU]
-use_dedicated_xma_thread = false # Fixes missing or broken audio
-xma_decoder = "new" # Fixes missing or broken audio
-
 [GPU]
 framerate_limit = 120 # Caps the framerate to 120

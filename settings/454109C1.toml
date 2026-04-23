@@ -1,9 +1,6 @@
 # Title Name: Madden NFL 25
 # Title ID: 454109C1
 
-[CPU]
-disable_context_promotion = true # Fixes animations
-
 [GPU]
 readback_resolve = "full" # Fixes the textures at the cost of performance
 

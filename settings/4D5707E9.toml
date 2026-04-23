@@ -1,6 +1,0 @@
-# Title Name: Mortal Kombat vs. DC Universe
-# Title ID: 4D5707E9
-
-[APU]
-use_dedicated_xma_thread = false # Fixes missing/broken audio
-xma_decoder = "new" # Fixes missing/broken audio
