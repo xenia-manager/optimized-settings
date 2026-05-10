@@ -1,2 +1,5 @@
+# Title Name: PAC-MAN
+# Title ID: 58410811
+
 [Content]
-license_mask = 1                                  	# Set license mask for activated content.
+license_mask = 1 # Unlocks the full game
