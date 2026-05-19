@@ -2,4 +2,8 @@
 # Title ID: 5841096A
 
 [GPU]
-readback_resolve = "full" # Fixes brightness at the cost of performance
+readback_resolve = "fast" # Fixes brightness at the cost of performance
+[Storage]
+mount_scratch = true                              	# Enable scratch mount
+[Content]
+license_mask = 1                                  	# Set license mask for activated content.
