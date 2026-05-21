@@ -1,5 +1,5 @@
 name: Validate Settings
-description: Validates TOML files in the settings directory for correct format and types
+description: Validates TOML files and verifies optimized settings exist in Xenia config with correct types
 
 on:
   pull_request:
@@ -8,23 +8,212 @@ on:
   push:
     paths:
       - "settings/**"
+  workflow_dispatch:
 
 jobs:
-  validate-settings:
-    runs-on: ubuntu-latest
+  prepare-xenia:
+    name: Prepare Xenia Config
+    runs-on: windows-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.x"
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-
       - name: Validate TOML files
         run: |
-          python scripts/validate_toml.py settings
+          Write-Output "Working directory: $(Get-Location)"
+          Write-Output "Settings directory exists: $(Test-Path 'settings')"
+          if (Test-Path 'settings') {
+            $tomlCount = (Get-ChildItem -Path 'settings' -Filter '*.toml').Count
+            Write-Output "TOML files in settings: $tomlCount"
+          }
+          python scripts/validate_toml.py
+
+      - name: Fetch Xenia Canary download URL
+        id: fetch-url
+        shell: pwsh
+        run: |
+          Write-Output "Fetching version info..."
+          $versionJson = Invoke-RestMethod -Uri "https://raw.githubusercontent.com/xenia-manager/database/refs/heads/main/data/version.json"
+          $downloadUrl = $versionJson.xenia.canary.url
+          Write-Output "url=$downloadUrl" >> $env:GITHUB_OUTPUT
+          Write-Output "Download URL: $downloadUrl"
+
+      - name: Download Xenia Canary
+        id: download
+        shell: pwsh
+        run: |
+          $zipPath = Join-Path $env:TEMP "xenia_canary.zip"
+          $extractPath = Join-Path $env:TEMP "xenia_canary"
+          Write-Output "Downloading to: $zipPath"
+          Write-Output "Extracting to: $extractPath"
+          Invoke-WebRequest -Uri "${{ steps.fetch-url.outputs.url }}" -OutFile $zipPath
+          Write-Output "Download complete, extracting..."
+          Expand-Archive -Path $zipPath -DestinationPath $extractPath -Force
+          Write-Output "Extraction complete"
+          Write-Output "Extracted contents:"
+          Get-ChildItem -Path $extractPath | ForEach-Object { Write-Output "  $($_.Name)" }
+          Write-Output "path=$extractPath" >> $env:GITHUB_OUTPUT
+
+      - name: Generate Xenia config
+        id: generate-config
+        shell: pwsh
+        run: |
+          $extractPath = "${{ steps.download.outputs.path }}"
+          Write-Output "Extract path: $extractPath"
+          Write-Output "Extract path exists: $(Test-Path $extractPath)"
+          $portableFile = Join-Path $extractPath "portable.txt"
+          New-Item -Path $portableFile -ItemType File -Force | Out-Null
+
+          $registryPath = "HKCU:\Software\Xenia"
+          if (-not (Test-Path $registryPath)) {
+              New-Item -Path $registryPath -Force | Out-Null
+          }
+          if (-not (Get-ItemProperty -Path $registryPath -Name "XEFLAGS" -ErrorAction SilentlyContinue)) {
+              New-ItemProperty -Path $registryPath -Name "XEFLAGS" -Value 1 -PropertyType QWord -Force | Out-Null
+          }
+
+          $exe = Get-ChildItem -Path $extractPath -Filter "xenia*.exe" | Select-Object -First 1
+          if (-not $exe) {
+            Write-Output "Extract path contents:"
+            Get-ChildItem -Path $extractPath -Recurse | ForEach-Object { Write-Output "  $($_.FullName)" }
+            Write-Error "No Xenia executable found in $extractPath"
+            exit 1
+          }
+          Write-Output "Found executable: $($exe.Name) ($($exe.Length) bytes)"
+          Write-Output "Running $($exe.Name) to generate config..."
+
+          $process = Start-Process -FilePath $exe.FullName -WorkingDirectory $extractPath -PassThru -WindowStyle Hidden
+
+          $timeout = 60
+          $elapsed = 0
+          $configFile = $null
+
+          while ($elapsed -lt $timeout) {
+              Start-Sleep -Seconds 2
+              $elapsed += 2
+
+              $configFile = Get-ChildItem -Path $extractPath -Filter "xenia*.config.toml" | Select-Object -First 1
+
+              if ($configFile) {
+                  Write-Output "Config file found after ${elapsed}s ($($configFile.Length) bytes)"
+              }
+
+              if ($configFile -and $configFile.Length -ge 10240) {
+                  Write-Output "Config file ready after ${elapsed}s ($($configFile.Length) bytes)"
+                  break
+              }
+
+              Write-Output "Waiting for config file... (${elapsed}s elapsed)"
+          }
+
+          if (-not $configFile -or $configFile.Length -lt 10240) {
+              Write-Output "All TOML files in extract path:"
+              Get-ChildItem -Path $extractPath -Filter "*.toml" | ForEach-Object { Write-Output "  $($_.Name) ($($_.Length) bytes)" }
+              Write-Error "Config file not generated or too small after ${timeout}s"
+              exit 1
+          }
+
+          if (-not $process.HasExited) {
+              Stop-Process -Id $process.Id -Force
+          }
+
+          Write-Output "Config file path: $($configFile.FullName)"
+          Copy-Item -Path $configFile.FullName -Destination "xenia_config.toml"
+          Write-Output "Copied config to workspace root"
+
+      - name: Upload Xenia config
+        uses: actions/upload-artifact@v7
+        with:
+          name: xenia-config
+          path: xenia_config.toml
+          retention-days: 1
+
+  verify-settings:
+    name: Verify Settings
+    runs-on: windows-latest
+    needs: prepare-xenia
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Download Xenia config
+        uses: actions/download-artifact@v8
+        with:
+          name: xenia-config
+
+      - name: Get changed settings files
+        id: changed-files
+        shell: pwsh
+        run: |
+          Write-Output "Event name: ${{ github.event_name }}"
+          Write-Output "Working directory: $(Get-Location)"
+          Write-Output "Settings directory exists: $(Test-Path 'settings')"
+          Write-Output "Xenia config exists: $(Test-Path 'xenia_config.toml')"
+          $files = @()
+
+          if ("${{ github.event_name }}" -eq "workflow_dispatch") {
+            $files = Get-ChildItem -Path "settings" -Filter "*.toml" | ForEach-Object { "settings/$($_.Name)" }
+            Write-Output "Workflow dispatch - checking all $($files.Count) files"
+          } else {
+            if ("${{ github.event_name }}" -eq "pull_request") {
+              $baseRef = "${{ github.base_ref }}"
+              $compareRef = "origin/$baseRef...HEAD"
+              Write-Output "Base ref: $baseRef"
+            } else {
+              $compareRef = "HEAD~1..HEAD"
+              Write-Output "Comparing last commit"
+            }
+
+            Write-Output "Running: git diff --name-only $compareRef -- settings/*.toml"
+            $files = git diff --name-only $compareRef -- "settings/*.toml"
+            $files = $files -split "`n" | Where-Object { $_ -match "\.toml$" }
+            Write-Output "Diff - checking $($files.Count) changed file(s)"
+          }
+
+          Write-Output "Files to check:"
+          $files | ForEach-Object { Write-Output "  $_" }
+          $files | Out-File -FilePath "changed_files.txt" -Encoding utf8
+          Write-Output "changed_files.txt contents:"
+          Get-Content "changed_files.txt" | ForEach-Object { Write-Output "  $_" }
+
+      - name: Verify settings
+        shell: pwsh
+        run: |
+          $configPath = Join-Path (Get-Location) "xenia_config.toml"
+          Write-Output "Config path: $configPath"
+          Write-Output "Config exists: $(Test-Path $configPath)"
+
+          if (-not (Test-Path "changed_files.txt")) {
+            Write-Output "No settings files to check (changed_files.txt not found)"
+            exit 0
+          }
+
+          $files = Get-Content "changed_files.txt" | Where-Object { $_.Trim() -ne "" }
+          Write-Output "Files from changed_files.txt ($($files.Count) total):"
+          $files | ForEach-Object {
+            $exists = Test-Path $_
+            Write-Output "  $_ (exists: $exists)"
+          }
+
+          if ($files.Count -eq 0) {
+            Write-Output "No settings files to check (empty list)"
+            exit 0
+          }
+
+          Write-Output "Running: python scripts/verify_settings.py $configPath --files $files"
+          python scripts/verify_settings.py $configPath --files $files
+        continue-on-error: ${{ github.event_name != 'pull_request' }}
