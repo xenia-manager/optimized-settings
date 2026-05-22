@@ -3,7 +3,6 @@
 
 [GPU]
 gpu = "vulkan" # Prevents crashing
-gpu_allow_invalid_fetch_constants = true # Fixes transparency effects
 readback_resolve = "fast" # Fixes the wrestlers/managers outfits
 
 [Memory]

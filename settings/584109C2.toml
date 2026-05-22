@@ -4,6 +4,3 @@
 [GPU]
 query_occlusion_sample_lower_threshold = 0 # Stops the lights rendering through the walls
 query_occlusion_sample_upper_threshold = 0 # Stops the lights rendering through the walls
-
-[Video]
-internal_display_resolution = 16 # Renders the game at 1080p

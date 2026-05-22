@@ -3,6 +3,3 @@
 
 [GPU]
 readback_resolve = "full" # Fixes the textures at the cost of performance
-
-[Storage]
-mount_cache = true # Stops the game from crashing

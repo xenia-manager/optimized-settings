@@ -3,5 +3,4 @@
 
 [GPU]
 clear_memory_page_state = true # Fixes the warped graphics in game
-framerate_limit = 0 # Unlocks framerate (Combined with disabled vertical sync)
 vsync = false # Unlocks framerate (Combined with framerate limit set to 0)

@@ -4,7 +4,6 @@
 [GPU]
 clear_memory_page_state = true # Fixes warped graphics on characters
 framerate_limit = 120 # Mitigates the slow effect while playing Online with a player far away.
-gpu_allow_invalid_fetch_constants = true # Fixes transparency stuff
 
 [Memory]
 protect_zero = false # Stops the game from crashing

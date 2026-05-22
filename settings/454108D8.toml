@@ -3,4 +3,3 @@
 
 [GPU]
 framerate_limit = 120 # Caps the framerate to 60
-readback_memexport = false # Improves performance
