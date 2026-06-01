@@ -3,3 +3,4 @@
 
 [GPU]
 readback_resolve = "full" # Stops the game from hanging during the intro
+occlusion_query="fake" # Fixes hanging

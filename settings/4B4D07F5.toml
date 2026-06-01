@@ -1,0 +1,5 @@
+# Title Name: Metro Last Light
+# Title ID: 4B4D07F5
+
+[GPU]
+gpu = "vulkan" # Fixes unoccluded lens flares (along with occlusion_query="fast" (default)

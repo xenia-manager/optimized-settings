@@ -3,3 +3,4 @@
 
 [GPU]
 vsync = false # Unlocks framerate (Combined with framerate limit set to 0)
+occlusion_query = "strict" # Fixes unoccluded lens flares

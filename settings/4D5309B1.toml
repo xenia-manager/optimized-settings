@@ -3,3 +3,5 @@
 
 [GPU]
 clear_memory_page_state = true # Fixes warped graphics in game
+query_occlusion_querybatch_range = 256 
+occlusion_query="fake"
