@@ -3,5 +3,5 @@
 
 [GPU]
 clear_memory_page_state = true # Fixes warped graphics in game
-query_occlusion_querybatch_range = 256 
-occlusion_query="fake"
+query_occlusion_querybatch_range = 256 # Fixes textures not loading
+occlusion_query="fake" # Fixes textures not loading
