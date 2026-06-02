@@ -16,6 +16,10 @@ modelled after `settings/4D5309C9.toml`:
 By default, files are rewritten in place. Use `--check` for a dry run that
 exits non-zero when any file would change (CI-friendly).
 
+Section ordering:
+  - With `--xenia-config <path>`: use the order from the Xenia config.
+  - Without `--xenia-config`: preserve the existing section order.
+
 Comments, option values, option keys, and the set of options in a file are
 preserved verbatim. Only spacing, line endings, and section ordering change.
 """
@@ -240,7 +244,8 @@ def main() -> None:
         "--xenia-config",
         default=None,
         help="Path to xenia config.toml (used to derive canonical section order). "
-        "If omitted, existing section order is preserved as-is.",
+        "If omitted, falls back to template.toml at the repo root; if that's "
+        "also missing, existing section order is preserved as-is.",
     )
     parser.add_argument(
         "--check",
@@ -276,7 +281,7 @@ def main() -> None:
             f"Canonical section order ({len(xenia_order)} sections) loaded from {xenia_path.name}"
         )
     else:
-        logger.info("No --xenia-config provided; preserving existing section order")
+        logger.info("No --xenia-config found; preserving existing section order")
 
     toml_files = collect_toml_files(args.settings_dir)
     if not toml_files:
