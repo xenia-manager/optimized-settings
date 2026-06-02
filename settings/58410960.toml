@@ -8,7 +8,7 @@ break_on_unimplemented_instructions = false # Stops the game from crashing
 clear_memory_page_state = true # Fixes warped graphics in game
 readback_resolve = "fast" # Fixes the garbled text
 gamma_render_target_as_unorm16=false # Fixed broken gamma on Source engine games
-occlusion_query_sample_count_saturation=0.7 # Fixes excessive lighting
+occlusion_query_saturation=0.7 # Fixes excessive lighting
 
 [Kernel]
 cl = "-dvd -game portal +fps_max 0" # Boots the game and unlocks framerate

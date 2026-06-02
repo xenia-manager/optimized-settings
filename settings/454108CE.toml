@@ -3,4 +3,4 @@
 
 [GPU]
 occlusion_query="strict" # Fixes unoccluded lens flares
-occlusion_query_sample_count_saturation = 0.85 # Fixes unoccluded lens flares
+occlusion_query_saturation = 0.85 # Fixes unoccluded lens flares
