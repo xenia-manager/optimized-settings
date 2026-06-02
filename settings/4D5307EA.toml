@@ -2,5 +2,4 @@
 # Title ID: 4D5307EA
 
 [GPU]
-query_occlusion_sample_lower_threshold = -1 # stops the lights rendering through the walls
 vsync = false # Unlocks framerate (Combined with framerate limit set to 0)

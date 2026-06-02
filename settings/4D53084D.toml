@@ -2,6 +2,5 @@
 # Title ID: 4D53084D
 
 [GPU]
-query_occlusion_sample_lower_threshold = -1 # Stops the lights rendering through the walls.
 readback_resolve = "full" # Fixes road texture and thumbnails of cars
 vsync = false # Unlocks framerate (Combined with framerate limit set to 0)
