@@ -3,7 +3,7 @@
 
 [GPU]
 framerate_limit = 120 # Fixes slowmo in online
-readback_resolve = "full" #Fixes the black clothing on characters but performance will be reduced
+readback_resolve = "full" # Fixes the black clothing on characters but performance will be reduced
 
 [General]
 time_scalar = 4 # Makes the game start
