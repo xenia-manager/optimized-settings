@@ -175,6 +175,22 @@ You can contribute to this project in several ways:
 
 6. **Submit Your Config** - Place the file in the `settings/` directory and create a pull request
 
+7. **Format the File** - Run the linter locally so the file matches the repo's style (CRLF line endings, section order, single-space `key = value # comment` formatting):
+
+   ```bash
+   python scripts/format_settings.py settings
+   ```
+
+   The linter is safe to run — values and comments are preserved; only spacing, line endings, and section ordering change. Section ordering is derived from `template.toml` at the repo root (the standard list of all known Xenia sections); pass `--xenia-config <path>` to use a specific Xenia config instead.
+
+   A `--check` flag is also available if you want a dry run that fails (exits non-zero) when any file would change:
+
+   ```bash
+   python scripts/format_settings.py settings --check
+   ```
+
+   > The CI workflow `Validate Settings` runs this same check and will fail the PR if any file in `settings/` is not formatted correctly, so running it locally before pushing will save a round trip.
+
 ### Contribution Guidelines
 
 - **Test on Real Hardware** - Ensure settings work across different GPU vendors (NVIDIA, AMD, Intel)
@@ -182,6 +198,7 @@ You can contribute to this project in several ways:
 - **Keep Comments Clear** - Explain _why_ a setting was changed, not just _what_ it does
 - **Follow Naming Conventions** - Use Title IDs from [x360db](https://github.com/xenia-manager/x360db/blob/main/games.json)
 - **Include Problem List** - Document all issues your config fixes in the PR description
+- **Run the Linter** - Run `python scripts/format_settings.py` before submitting so the file matches the repo style. The CI check will reject unformatted files.
 
 ---
 
