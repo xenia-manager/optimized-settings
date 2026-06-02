@@ -217,3 +217,16 @@ jobs:
           Write-Output "Running: python scripts/verify_settings.py $configPath --files $files"
           python scripts/verify_settings.py $configPath --files $files
         continue-on-error: ${{ github.event_name != 'pull_request' }}
+
+      - name: Check settings formatting
+        shell: pwsh
+        run: |
+          $configPath = Join-Path (Get-Location) "xenia_config.toml"
+          Write-Output "Checking format of all settings files against 4D5309C9.toml style"
+          Write-Output "Running: python scripts/format_settings.py settings --xenia-config $configPath --check"
+          python scripts/format_settings.py settings --xenia-config $configPath --check
+          if ($LASTEXITCODE -ne 0) {
+            Write-Error "Format check failed. Run python scripts/format_settings.py locally to fix. If the sections are out of order run python scripts/format_settings.py settings --xenia-config <point towards your config file>"
+            exit 1
+          }
+          Write-Output "Format check passed"
