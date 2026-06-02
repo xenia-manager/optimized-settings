@@ -387,6 +387,25 @@ def get_value_type_name(value: Any) -> str:
     return "Unknown"
 
 
+def types_compatible(a: ConfigOptionType, b: ConfigOptionType) -> bool:
+    if a == b:
+        return True
+    return {a, b} == {ConfigOptionType.INTEGER, ConfigOptionType.FLOAT}
+
+
+def values_equal(a: Any, b: Any) -> bool:
+    if isinstance(a, bool) or isinstance(b, bool):
+        return a == b
+    if isinstance(a, (int, float)) and isinstance(b, (int, float)):
+        return float(a) == float(b)
+    if isinstance(a, float) or isinstance(b, float):
+        try:
+            return float(a) == float(b)
+        except (TypeError, ValueError):
+            return False
+    return a == b
+
+
 # =========================
 # Comparison Logic
 # =========================
@@ -446,7 +465,7 @@ def compare_configs(
                 )
                 continue
 
-            if xenia_option.type != optimized_option.type:
+            if not types_compatible(xenia_option.type, optimized_option.type):
                 logger.debug(
                     f"Type mismatch: [{optimized_section.name}] {optimized_option.name} "
                     f"(expected {optimized_option.type.value}, got {get_value_type_name(xenia_option.value)})"
@@ -464,7 +483,7 @@ def compare_configs(
                         issue_type="type_mismatch",
                     )
                 )
-            elif xenia_option.value == optimized_option.value:
+            elif values_equal(xenia_option.value, optimized_option.value):
                 logger.debug(
                     f"Value match: [{optimized_section.name}] {optimized_option.name} "
                     f"(already using default value: {optimized_option.value})"
