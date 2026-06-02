@@ -6,6 +6,8 @@ on:
     paths:
       - "settings/**"
   push:
+    branches:
+      - main
     paths:
       - "settings/**"
   workflow_dispatch:
