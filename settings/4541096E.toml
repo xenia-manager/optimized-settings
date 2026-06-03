@@ -2,5 +2,7 @@
 # Title ID: 4541096E
 
 [GPU]
+occlusion_query_fake_lower_threshold = 0 # Fixes lens flares
+occlusion_query_fake_upper_threshold = 0 # Fixes lens flares
 readback_resolve = "full" # Stops the game from hanging during the intro
 occlusion_query="fake" # Fixes hanging
