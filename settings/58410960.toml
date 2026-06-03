@@ -7,7 +7,6 @@ break_on_unimplemented_instructions = false # Stops the game from crashing
 [GPU]
 clear_memory_page_state = true # Fixes warped graphics in game
 readback_resolve = "fast" # Fixes the garbled text
-gamma_render_target_as_unorm16=false # Fixed broken gamma on Source engine games
 occlusion_query_saturation=0.7 # Fixes excessive lighting
 
 [Kernel]
