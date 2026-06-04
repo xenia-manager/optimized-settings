@@ -6,5 +6,3 @@ apu_max_queued_frames = 4 # Stops the audio delay
 
 [GPU]
 clear_memory_page_state = true # Fixes warped graphics in game
-readback_memexport = false # Improves performance
-readback_resolve = "none" # Improves performance
