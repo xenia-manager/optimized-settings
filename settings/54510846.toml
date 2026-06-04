@@ -2,4 +2,4 @@
 # Title ID: 54510846
 
 [GPU]
-occlusion_query="strict" # Fixes unoccluded lens flares
+occlusion_query = "strict" # Fixes unoccluded lens flares

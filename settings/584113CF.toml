@@ -2,5 +2,5 @@
 # Title ID: 584113CF
 
 [GPU]
-occlusion_query="fake" # Fixes unoccluded lens flares
+occlusion_query = "fake" # Fixes unoccluded lens flares
 occlusion_query_querybatch_range = 256 # Fixes unoccluded lens flares

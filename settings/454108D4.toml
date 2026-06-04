@@ -2,4 +2,4 @@
 # Title ID: 454108D4
 
 [GPU]
-occlusion_query_saturation=0.7 # Fixes excessive brightness
+occlusion_query_saturation = 0.7 # Fixes excessive brightness

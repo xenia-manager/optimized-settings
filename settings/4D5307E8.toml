@@ -2,5 +2,5 @@
 # Title ID: 4D5307E8
 
 [GPU]
-occlusion_query="strict" # Fixes unoccluded lens flares
+occlusion_query = "strict" # Fixes unoccluded lens flares
 occlusion_query_saturation = 0.75 # Fixes excessively bright flares
