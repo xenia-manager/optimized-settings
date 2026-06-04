@@ -1,0 +1,5 @@
+# Title Name: Too Human
+# Title ID: 4D5307DE
+
+[GPU]
+occlusion_query = "fast-alt" # Fixes unoccluded lens flares

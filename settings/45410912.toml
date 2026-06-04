@@ -1,0 +1,7 @@
+# Title Name: Portal 2
+# Title ID: 45410912
+
+[GPU]
+readback_resolve = "fast" # Fixes the text not rendering
+gamma_render_target_as_unorm16 = false # Gamma correction for Source engine games
+occlusion_query_saturation = 0.7 # Fixes excessive brightness

@@ -1,0 +1,5 @@
+# Title Name: Kameo: Elements of Power
+# Title ID: 4D5307D2
+
+[GPU]
+occlusion_query = "strict" # Fixes unoccluded lens flares

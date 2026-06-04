@@ -1,0 +1,6 @@
+# Title Name: Counter Strike: GO
+# Title ID: 5841125A
+
+[GPU]
+occlusion_query = "strict" # Fixes unoccluded lens flares
+occlusion_query_saturation = 0.7 # Fixes unoccluded lens flares

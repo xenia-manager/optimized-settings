@@ -1,0 +1,5 @@
+# Title Name: Star Trek
+# Title ID: 4E4D085B
+
+[GPU]
+occlusion_query = "strict" # Fixes unoccluded lens flares

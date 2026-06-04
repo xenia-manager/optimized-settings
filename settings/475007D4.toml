@@ -1,0 +1,5 @@
+# Title Name: Section 8
+# Title ID: 475007D4
+
+[GPU]
+occlusion_query = "strict" # Fixes unoccluded lens flares

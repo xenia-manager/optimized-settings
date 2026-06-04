@@ -1,0 +1,5 @@
+# Title Name: GoldenEye 007 - Reloaded
+# Title ID: 415688D0
+
+[GPU]
+occlusion_query = "fast-alt" # Fixes unoccluded lens flares

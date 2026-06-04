@@ -1,0 +1,5 @@
+# Title Name: Metro 2033
+# Title ID: 54510842
+
+[GPU]
+occlusion_query = "strict" # Fixes unoccluded lens flares

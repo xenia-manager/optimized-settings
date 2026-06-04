@@ -1,0 +1,5 @@
+# Title Name: Left 4 Dead 2
+# Title ID: 454108D4
+
+[GPU]
+occlusion_query_saturation = 0.7 # Fixes excessive brightness

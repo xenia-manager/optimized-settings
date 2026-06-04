@@ -1,0 +1,6 @@
+# Title Name: Mass Effect 2
+# Title ID: 454108CE
+
+[GPU]
+occlusion_query = "strict" # Fixes unoccluded lens flares
+occlusion_query_saturation = 0.85 # Fixes unoccluded lens flares

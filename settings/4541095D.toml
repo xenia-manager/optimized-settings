@@ -1,0 +1,5 @@
+# Title Name: Mass Effect 3
+# Title ID: 4541095D
+
+[GPU]
+occlusion_query = "strict" # Fixes unoccluded lens flares

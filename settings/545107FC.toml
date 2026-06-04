@@ -1,5 +1,8 @@
 # Title Name: Saints Row 2
 # Title ID: 545107FC
 
+[GPU]
+occlusion_query = "fast-alt" # Fixes unoccluded lens flares
+
 [Memory]
 protect_zero = false # Fixes freezing issues

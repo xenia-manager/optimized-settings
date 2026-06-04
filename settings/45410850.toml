@@ -1,0 +1,5 @@
+# Title Name: Mirror's Edge
+# Title ID: 45410850
+
+[GPU]
+occlusion_query = "strict" # Fixes unoccluded lens flares

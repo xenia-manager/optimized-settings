@@ -1,0 +1,5 @@
+# Title Name: Dishonored
+# Title ID: 425307E3
+
+[GPU]
+occlusion_query = "fake" # Fixes popping geometry that happens on "fast" default
