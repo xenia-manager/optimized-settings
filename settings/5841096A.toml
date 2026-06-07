@@ -1,8 +1,8 @@
 # Title Name: BurgerTime World Tour
 # Title ID: 58410B90
 
-[GPU]
-readback_resolve = "full"                           # Fixes brightness at the cost of performance
-
 [Content]
 license_mask = 1                                  	# Unlock full game
+
+[GPU]
+readback_resolve = "full"                           # Fixes brightness at the cost of performance
