@@ -2,7 +2,7 @@
 # Title ID: 58410B90
 
 [Content]
-license_mask = 1                                  	# Unlock full game
+license_mask = 1 # Unlock full game
 
 [GPU]
-readback_resolve = "full"                           # Fixes brightness at the cost of performance
+readback_resolve = "full" # Fixes brightness at the cost of performance
