@@ -1,4 +1,5 @@
-# BurgerTime World Tour
-# Unlock full game.
+# Title Name: BurgerTime World Tour
+# Title ID: 58410B90
+
 [Content]
 license_mask = 1                                  	# Unlock full game.
