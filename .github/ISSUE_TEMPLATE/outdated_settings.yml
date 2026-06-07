@@ -1,0 +1,79 @@
+name: Outdated Settings
+description: Report that a game's optimized settings are outdated or no longer work correctly
+labels: ["outdated"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this! Please fill out the details below so the settings can be reviewed and updated.
+
+  - type: input
+    id: title_id
+    attributes:
+      label: Title ID
+      description: The 8-character Title ID of the game (e.g., 4D5309C9).
+      placeholder: "4D5309C9"
+    validations:
+      required: true
+
+  - type: input
+    id: game_title
+    attributes:
+      label: Game Title
+      description: Full title of the game.
+      placeholder: "Forza Horizon"
+    validations:
+      required: true
+
+  - type: input
+    id: xenia_version
+    attributes:
+      label: Xenia Version
+      description: The version of Xenia Canary you tested with (commit hash or build date).
+      placeholder: "e.g., 2025-12-01 or abc1234"
+    validations:
+      required: true
+
+  - type: textarea
+    id: outdated_settings
+    attributes:
+      label: Outdated Settings
+      description: List the settings that are no longer correct or can be improved. Include the current value and what it should be.
+      placeholder: |
+        - `readback_resolve = "full"` → can now be removed, no longer needed
+        - `framerate_limit = 120` → should be `framerate_limit = 60`, game runs better capped
+        - `vsync = false` → should be `vsync = true`, causes screen tearing now
+      value: |
+        | Setting | Current Value | Suggested Value | Reason |
+        |---------|--------------|-----------------|--------|
+        |         |              |                 |        |
+    validations:
+      required: true
+
+  - type: textarea
+    id: problems
+    attributes:
+      label: Problems with Current Settings
+      description: What issues occur with the current optimized settings (crashes, graphical glitches, performance loss, etc.).
+      placeholder: |
+        - Game crashes on startup with current settings
+        - Textures are flickering after recent Xenia update
+        - Performance dropped from 60fps to 30fps
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Evidence
+      description: Attach screenshots or videos showing the problem. Drag and drop images here.
+      placeholder: "Drag and drop images or paste image URLs here."
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Any other details (hardware, GPU vendor, OS, workarounds you've found, etc.).
+      placeholder: "Windows 10, NVIDIA RTX 3070, 16GB RAM"
