@@ -3,3 +3,4 @@
 
 [GPU]
 render_target_path_d3d12 = "rov" # Fixes the decals
+readback_memexport = false # Improves performance.
