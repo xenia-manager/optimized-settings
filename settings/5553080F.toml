@@ -1,0 +1,6 @@
+# Title Name: Lost - Via Domus
+# Title ID: 5553080F
+
+[GPU]
+occlusion_query = "fake" # Fixes flickering and performance issues
+occlusion_query_querybatch_range = 8 # Fixes flickering and performance issues
