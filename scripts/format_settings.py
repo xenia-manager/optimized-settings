@@ -57,7 +57,7 @@ logger = logging.getLogger(__name__)
 # =========================
 
 CRLF = b"\r\n"
-DEFAULT_SETTINGS_DIR = "../settings"
+DEFAULT_SETTINGS_DIR = "settings"
 
 
 # =========================
