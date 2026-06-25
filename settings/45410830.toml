@@ -4,3 +4,4 @@
 [GPU]
 gamma_render_target_as_unorm16 = false # Fixes broken gamma
 occlusion_query_saturation = 0.7 # Fixes excessive brightness
+readback_resolve = "full" # Fixes garbled text
