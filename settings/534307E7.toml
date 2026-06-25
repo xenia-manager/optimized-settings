@@ -2,4 +2,4 @@
 # Title ID: 534307E7
 
 [GPU]
-gpu = "vulkan" #Fixes vehicle models not rendering
+gpu = "vulkan" # Fixes vehicle models not rendering

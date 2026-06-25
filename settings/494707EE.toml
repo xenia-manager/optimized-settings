@@ -2,4 +2,4 @@
 # Title ID: 494707EE
 
 [GPU]
-occlusion_query = "fast-alt" #Fixes autoexposure issue (brightness)
+occlusion_query = "fast-alt" # Fixes autoexposure issue (brightness)
