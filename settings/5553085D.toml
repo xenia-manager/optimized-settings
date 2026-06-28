@@ -1,0 +1,6 @@
+# Title Name: Assassin's Creed - Brotherhood
+# Title ID: 5553085D
+
+[GPU]
+framerate_limit = 120 # Caps the FPS to 60.
+occlusion_query = "strict" # Fixes unoccluded lens flares and prevents geometry flickering.

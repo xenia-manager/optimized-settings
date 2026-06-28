@@ -3,3 +3,6 @@
 
 [GPU]
 render_target_path_d3d12 = "rov" # Fixes broken character models
+
+[Storage]
+mount_scratch = true # Needed for getting ingame initially
