@@ -37,6 +37,12 @@ jobs:
           }
           python scripts/validate_toml.py
 
+      - name: Download 7zr
+        shell: pwsh
+        run: |
+          $7zrPath = Join-Path $env:TEMP "7zr.exe"
+          Invoke-WebRequest -Uri "https://github.com/ip7z/7zip/releases/latest/download/7zr.exe" -OutFile $7zrPath
+
       - name: Fetch Xenia Canary download URL
         id: fetch-url
         shell: pwsh
@@ -51,13 +57,16 @@ jobs:
         id: download
         shell: pwsh
         run: |
-          $zipPath = Join-Path $env:TEMP "xenia_canary.zip"
+          $url = "${{ steps.fetch-url.outputs.url }}"
+          $ext = [System.IO.Path]::GetExtension($url)
+          $archivePath = Join-Path $env:TEMP "xenia_canary$ext"
           $extractPath = Join-Path $env:TEMP "xenia_canary"
-          Write-Output "Downloading to: $zipPath"
-          Write-Output "Extracting to: $extractPath"
-          Invoke-WebRequest -Uri "${{ steps.fetch-url.outputs.url }}" -OutFile $zipPath
+          Write-Output "URL: $url"
+          Write-Output "Saving to: $archivePath"
+          Invoke-WebRequest -Uri $url -OutFile $archivePath
           Write-Output "Download complete, extracting..."
-          Expand-Archive -Path $zipPath -DestinationPath $extractPath -Force
+          $7zr = Join-Path $env:TEMP "7zr.exe"
+          & $7zr x "$archivePath" -o"$extractPath" -y
           Write-Output "Extraction complete"
           Write-Output "Extracted contents:"
           Get-ChildItem -Path $extractPath | ForEach-Object { Write-Output "  $($_.Name)" }
