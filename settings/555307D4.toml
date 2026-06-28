@@ -1,0 +1,5 @@
+# Title Name: Assassin's Creed
+# Title ID: 555307D4
+
+[GPU]
+occlusion_query = "strict" # Fixes flickering geometry and unoccluded lens flares

@@ -1,0 +1,5 @@
+# Title Name: Assassin's Creed II
+# Title ID: 5553083B
+
+[GPU]
+occlusion_query = "strict" # Fixes flickering geometry and unoccluded lens flares

@@ -1,0 +1,9 @@
+# Title Name: DiRT 2
+# Title ID: 434D0819
+
+[APU]
+xma_decoder = "old" # Fixes hang on certain events
+use_dedicated_xma_thread = false # Fixes hang on certain events
+
+[GPU]
+readback_resolve = "full" # Fixes brightness and water reflections

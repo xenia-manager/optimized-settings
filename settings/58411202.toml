@@ -1,0 +1,8 @@
+# Title Name: Sonic Adventure 2
+# Title ID: 58411202
+
+[Content]
+license_mask = 1 # Unlocks full game
+
+[GPU]
+gpu = "vulkan" # Fixes missing and corrupted textures
