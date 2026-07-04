@@ -1,5 +1,5 @@
-# Game-specific config overrides
+# Title Name: BurgerTime World Tour
 # Title ID: 58410B90
 
 [Content]
-license_mask = 1
+license_mask = 1 # Unlocks Full Game
