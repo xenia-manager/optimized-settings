@@ -1,0 +1,5 @@
+# Game-specific config overrides
+# Title ID: 58410B90
+
+[Content]
+license_mask = 1
