@@ -1,0 +1,6 @@
+# Title Name: Brothers in Arms - Hell's Highway
+# Title ID: 555307EA
+
+[GPU]
+render_target_path_d3d12 = "rov" # Fixes the flickering shadows at the cost of performance.
+vsync = false # Unlocks FPS (Combined with Framerate Limit set to 0).

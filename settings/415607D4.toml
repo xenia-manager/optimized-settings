@@ -1,0 +1,5 @@
+# Title Name: American Wasteland
+# Title ID: 415607D4
+
+[GPU]
+clear_memory_page_state = true # Partially fixes the flickering FMVs but still happens.

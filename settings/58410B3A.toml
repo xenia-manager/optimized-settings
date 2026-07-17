@@ -1,0 +1,6 @@
+# Title Name: I Am Alive
+# Title ID: 58410B3A
+
+[GPU]
+clear_memory_page_state = true # Fixes the flickering intro videos.
+readback_resolve = "fast" # Fixes the brightness.

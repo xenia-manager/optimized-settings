@@ -1,0 +1,10 @@
+# Title Name: Assassins Creed IV Black Flag
+# Title ID: 555308C2
+
+[GPU]
+framerate_limit = 120 # Caps the FPS to 60.
+occlusion_query = "strict" # Prevents unoccluded lens flares.
+readback_resolve = "full" # Fixes eye textures.
+
+[General]
+launch_module = "scimitar_final.xex" # launches the singleplayer.

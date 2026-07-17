@@ -1,0 +1,9 @@
+# Title Name: Assassins Creed III
+# Title ID: 555308AE
+
+[GPU]
+occlusion_query = "strict" # Fixes lens flares and prevents geometry flickering.
+vsync = false # Unlocks FPS (Combined with Framerate Limit set to 0).
+
+[General]
+launch_module = "scimitar_final.xex" # launches the singleplayer.
