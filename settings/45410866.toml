@@ -1,0 +1,5 @@
+# Title Name: The Godfather II
+# Title ID: 45410866
+
+[GPU]
+occlusion_query = "fake" # Avoids flickering geometry.

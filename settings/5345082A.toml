@@ -1,0 +1,5 @@
+# Title Name: Aliens vs Predator
+# Title ID: 5345082A
+
+[GPU]
+render_target_path_d3d12 = "rov" # Renders graphics.
