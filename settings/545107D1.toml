@@ -4,5 +4,8 @@
 [D3D12]
 d3d12_submit_on_primary_buffer_end = false # Fixes the blocky shadows if you ever get them
 
+[GPU]
+occlusion_query = "fast-alt"
+
 [Memory]
 protect_zero = false # Stops the game from crashing
