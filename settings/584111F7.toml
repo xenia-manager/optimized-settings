@@ -1,5 +1,10 @@
 # Title Name: Minecraft Xbox 360 Edition
 # Title ID: 584111F7
 
+[APU]
+apu = "sdl" # Fixes sudden audio volume increases
+
 [GPU]
+readback_resolve = "fast" # Fixes World Select thumbnails
+render_target_path_d3d12 = "rov" # Fixes interface opacity (Only for TU2-TU11)
 vsync = false # Unlocks framerate (Combined with framerate limit set to 0)
