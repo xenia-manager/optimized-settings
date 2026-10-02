@@ -2,4 +2,4 @@
 # Title ID: 454108D4
 
 [GPU]
-occlusion_query_saturation = 0.7 # Fixes excessive brightness
+readback_resolve = "fast" # Fixes text not rendering

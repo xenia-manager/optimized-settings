@@ -1,5 +1,0 @@
-# Title Name: Warhammer 40K Space Marine
-# Title ID: 5451082C
-
-[GPU]
-occlusion_query = "fake" # Fixes hanging

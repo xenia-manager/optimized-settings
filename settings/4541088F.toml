@@ -1,0 +1,5 @@
+# Title Name: The Saboteur
+# Title ID: 4541088F
+
+[GPU]
+readback_resolve = "fast" # Fixes excessive brightness

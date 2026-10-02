@@ -1,5 +1,0 @@
-# Title Name: Bioshock Infinite
-# Title ID: 5454085D
-
-[GPU]
-occlusion_query = "strict" # Fixes unoccluded lens flares

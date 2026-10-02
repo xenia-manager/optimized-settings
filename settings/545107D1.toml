@@ -5,7 +5,7 @@
 d3d12_submit_on_primary_buffer_end = false # Fixes the blocky shadows if you ever get them
 
 [GPU]
-occlusion_query = "fast-alt" # Improves lens flare occlusion
+occlusion_query = "fast-alt" # Fixes unoccluded lens flares
 
 [Memory]
 protect_zero = false # Stops the game from crashing

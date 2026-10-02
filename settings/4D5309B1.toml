@@ -2,6 +2,4 @@
 # Title ID: 4D5309B1
 
 [GPU]
-clear_memory_page_state = true # Fixes warped graphics in game
-occlusion_query = "fake" # Fixes textures not loading
-occlusion_query_querybatch_range = 256 # Fixes textures not loading
+readback_resolve = "full" # Fixes gamma and flashlight rendering

@@ -1,0 +1,7 @@
+# Title Name: The Amazing Spider-Man 2
+# Title ID: 41560905
+
+[GPU]
+occlusion_query = "strict" # Fixes unoccluded lens flares
+occlusion_query_full_counters = true # Fixes unoccluded lens flares
+render_target_path_d3d12 = "rov" # Fixes lighting issues

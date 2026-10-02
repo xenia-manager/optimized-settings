@@ -3,7 +3,6 @@
 
 [GPU]
 draw_resolution_scale_threshold = 360 # Fixes post-process effects when using resolution scaling. Doesn't activate when rendering 1x1.
-occlusion_query = "strict" # Fixes unoccluded lens flares
 vsync = false # Unlocks framerate (Combined with framerate limit set to 0)
 
 [Kernel]
