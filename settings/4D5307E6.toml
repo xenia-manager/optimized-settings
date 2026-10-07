@@ -4,3 +4,4 @@
 [GPU]
 depth_bias_shader_offset = true # Fixes the rare Z-fighting decal
 readback_resolve = "full" # Fixes gamma
+draw_resolution_scale_threshold = 360 # Fixes the scaling
