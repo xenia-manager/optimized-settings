@@ -1,0 +1,6 @@
+# Title Name: Dark Void
+# Title ID: 434307E0
+
+[GPU]
+window_offset_in_edram = false # Fixes MSAA tiling rendering issue
+xenos_sample_positions = true # Fixes MSAA tiling rendering issue

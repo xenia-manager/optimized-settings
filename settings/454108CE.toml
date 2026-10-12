@@ -2,5 +2,6 @@
 # Title ID: 454108CE
 
 [GPU]
-depth_bias_shader_offset = true # Fixes the decals
 occlusion_query = "strict" # Fixes unoccluded lens flares
+render_target_path_d3d12 = "rov" # Fixes flickering decals and MSAA tiling
+window_offset_in_edram = false # Fixes MSAA tiling

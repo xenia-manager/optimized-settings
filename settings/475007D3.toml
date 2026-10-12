@@ -1,0 +1,7 @@
+# Title Name: Legendary
+# Title ID: 475007D3
+
+[GPU]
+occlusion_query = "strict"
+window_offset_in_edram = false # Fixes MSAA tiling rendering issue
+xenos_sample_positions = true # Fixes MSAA tiling rendering issue

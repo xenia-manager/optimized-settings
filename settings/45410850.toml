@@ -3,3 +3,5 @@
 
 [GPU]
 occlusion_query = "strict" # Fixes unoccluded lens flares
+window_offset_in_edram = false # Fixes MSAA tiling rendering issue
+xenos_sample_positions = true # Fixes MSAA tiling rendering issue
