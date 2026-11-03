@@ -1,0 +1,6 @@
+# Title Name: Fatal Inertia
+# Title ID: 4B4F07D7
+
+[GPU]
+window_offset_in_edram = false # Fixes MSAA tiling rendering issue
+xenos_sample_positions = true # Fixes MSAA tiling rendering issue

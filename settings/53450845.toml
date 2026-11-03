@@ -1,0 +1,6 @@
+# Title Name: Thor God of Thunder
+# Title ID: 53450845
+
+[GPU]
+window_offset_in_edram = false # Fixes MSAA tiling rendering issue
+xenos_sample_positions = true # Fixes MSAA tiling rendering issue

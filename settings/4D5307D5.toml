@@ -4,3 +4,5 @@
 [GPU]
 depth_bias_shader_offset = true # Fixes the decals
 vsync = false # Unlocks framerate (Combined with framerate limit set to 0)
+window_offset_in_edram = false # Fixes MSAA tiling rendering issue
+xenos_sample_positions = true # Fixes MSAA tiling rendering issue

@@ -3,3 +3,5 @@
 
 [GPU]
 depth_bias_shader_offset = true # Fixes the decals
+window_offset_in_edram = false # Fixes MSAA tiling rendering issue
+xenos_sample_positions = true # Fixes MSAA tiling rendering issue

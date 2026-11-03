@@ -4,6 +4,8 @@
 [GPU]
 draw_resolution_scale_threshold = 360 # Fixes post-process effects when using resolution scaling. Doesn't activate when rendering 1x1.
 vsync = false # Unlocks framerate (Combined with framerate limit set to 0)
+window_offset_in_edram = false # Fixes MSAA tiling rendering issue
+xenos_sample_positions = true # Fixes MSAA tiling rendering issue
 
 [Kernel]
 cl = "-NoStartupMovies" # Skips intro
